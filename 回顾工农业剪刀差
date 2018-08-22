@@ -1,7 +1,1 @@
-Once we have done this calculation, we can easily test for SARP. 
-We just see if there is a situation where there is a star in row t, column s, 
-and also a star in row s, column t. 
-If so, we have found a situation where observation
-t is revealed preferred to observation s, either directly or indirectly, and,
-at the same time, observation s is revealed preferred to observation t. This
-is a violation of the Strong Axiom of Revealed Preference.
+
