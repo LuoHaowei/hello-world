@@ -194,6 +194,27 @@ linkcolor=black}
     \begin{equation}
     k_{t+1}=\frac{1}{(1+n)(1+g)}\frac{1}{2+\rho}(1-\alpha)k_{t}^\alpha
     \end{equation}
+    令$k_{t+1}=k_t=k*$为稳态下的资本存量值，显然当$k*=0$时上式成立，但此种情况由于已假定初始资本存量$K_0$严格大于零而被排除，则由函数形态可判断仅剩一点$k*$可满足
+    \begin{equation}
+    k*=\frac{1}{(1+n)(1+g)}\frac{1}{2+\rho}(1-\alpha)k*^\alpha
+    \end{equation}
+    解得
+    \begin{equation}
+    k*=[\frac{1-\alpha}{(1+n)(1+g)(2+\rho)}]^{1/(1-\alpha)}
+    \end{equation}
+    且由于生产函数已知，得到每单位有效劳动的产出
+    \begin{equation}
+    y*=k*^\alpha=[\frac{1-\alpha}{(1+n)(1+g)(2+\rho)}]^{\alpha/(1-\alpha)}
+    \end{equation}
+    经济中暂时存在不同的$k_t$值也将向$k*$收敛，例如设初始值$k_0$大于$k*$，因为由函数形态可知在$k$值超越稳态之后，$k_{t+1}$将小于$k_t$，又因为资本存量的发展路径为增函数，则有$k*<k_1<k_0$，并且$k_2$、$k_3$等等后续的资本存量值都将处于上一期资本存量值与均衡发展路径上的值$k*$之间，在长期中资本存量值$k_t$将不断趋近于$k*$，直至最终达至稳态不再变动。初始值$k_0$小于$k*$情况下的分析与此类似不再赘述。可发现，在均衡增长路径上，储蓄率为常数，每个个体劳动产出增长速率恒定为$A$的增长率$g$且资本-产出比保持不变。若探究经济趋近于均衡发展路径的具体情况，可设$k'_{t+1}(k*)=\lambda$，即将资本存量发展路径在$k*$处的导数记为$\lambda$。根据线性化，在均衡发展路径周围有$k_{t+1}-k*\backsimeq\lambda(k_t-k*)$，进一步推演即得到$k_t-k*\backsimeq\lambda^t(k_0-k*)$。可见趋近于均衡发展路径的情况与$\lambda$密切相关。可求解此导数值
+    \begin{equation}
+    \begin{aligned}
+    \lambda &=\alpha\frac{1-\alpha}{(1+n)(1+g)(2+\rho)}k*^{\alpha-1}\\
+    &=\alpha\frac{1-\alpha}{(1+n)(1+g)(2+\rho)}[\frac{1-\alpha}{(1+n)(1+g)(2+\rho)}]^{\alpha-1/(1-\alpha)}
+    &=\alpha
+    \end{aligned}
+    \end{equation}
+    可见$\lambda$为Cobb-Douglas生产函数中的系数$\alpha$，系数$\alpha$在0到1之间，则经济将平滑地趋近于均衡发展路径。若非限定为效用函数采取对数形式且生产函数采取Cobb-Douglas函数形式，可分情况讨论$\lambda$，位于0至1之间的情况无需多言，当其在-1到0之间时，资本存量值将围绕均衡发展路径表现出逐渐减弱的上下波动并最终收敛，如其大于1则最终资本存量值将趋于正无限而不会收敛于均衡发展路径，如其小于-1则资本存量值将围绕$k*$上下剧烈波动且无法收敛。    
     
     \section{结论与政策建议}
     \ldots
