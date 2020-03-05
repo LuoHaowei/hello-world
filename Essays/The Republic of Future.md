@@ -1,5 +1,5 @@
 # The Republic of Future
-2019/3/3 Haowei Luo
+2020/3/3 Haowei Luo
 
 想暂时放下real GDP calibraton的研究，于是找来NHK《三和人才市场》这部纪录片做些笔记。
 
