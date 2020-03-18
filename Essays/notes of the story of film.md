@@ -137,3 +137,64 @@ Cabiria (1914)
 Intolerance (1916)
 
 Souls on the Road (1921)
+## Episode 02
+* World War I ended in 1918. A few years later, the surrealist manifesto said that art should record dream. Starlets with the especial slenderness of youth were attracted by the bauble which is Hollywood with its escapism and promise of perfection. But before the 1920s were over, key filmmakers were trying to break the bauble.
+* 1920年前后重要的商人与制片商：Adolph Zukor & Paramount, Warner bros, Louis B.Mayer & MGM. They built big boring bunkers called "sound stages" for the needs of production by which filming could move indoors to control light. 
+* Hollywood set up a production line system while in Japan directors led the process. In Hollywood, the whole point was to standardize and control, it was a "dictatorship in which the artist is silenced".
+* Stanley Donen, who made *Singin' in the Rain* thinks that the "studio system" didn't really get into the film, it was a garden where gifted people all worked. The "studio system", a capitalist production line, was copied around the world. Industries made formulaic, copycat movies. They also fostered expertise and taste, extravagance and brilliance.  
+* MGM was said to have "more stars than there are in heaven", its movies had an opulence and optimism. Warner was more streetwise, its stars were angels with dirty faces. Paramount's style was feminine, romantic, more taken by the "veiled" and the east.
+* Hollywood mainstream films in the 20s were entertaining and romantic. Were they innovative? Some of the most popular films of the 20s, the comedies, most certainly were.
+* The greatest American comedy directors: Buster Keaton, Charlie Chaplin and Harold Lloyd. Before them, there was mostly slapstick, sight gag, good but cheap laugh. 
+* Keaton was the greatest comic image-maker the cinema had yet seen. He thought like an architect. Keaton helped define silent cinema. 他的一系列作品显示他已掌握了剪辑的要领，领悟了电影是一场视觉的游戏，同时勇敢地亲自尝试完成特技戏份。Keaton's inventiveness was often highly planned, but sometimes spontaneous. In *The General*, every visual joke and setup in the first half is repeated and amplified in the second, but in reverse order. The climax of *The General* has been called: the most stunning visual event ever arranged. 他使用了桥梁垮塌，火车坠落这一桥段，银幕上的灾难都是来自真实的取景，此后火车损毁在电影中开始流行。Such scale, such sublime was a key element of silent film. At that time, labor was cheap, Wall Street hadn't crashed, imaginations were extarvagant and uncapped. Studios were not yet afraid of the size of directors' dreams. Eventually Keaton's dreams overstripped his box office, and he was sacked by MGM. Keaton filmed in deadpan, and kept back from the action. 即保持表演的冷静与克制，这一点影响了诸多后辈，如巴勒斯坦人 Elia Suleiman.
+* Chaplin was less into the camera than Keaton, he was far more into body movement. Chaplin thought like a dancer and a vaudevillian. The film *The Kid* humanized comic cinema, it showed Chaplin's passionate empathy with the poor. Chaplin was cinema's Charles Dickens. The Soviets thought of him as a marxist, but Chaplin was almost a Jungian too. He showed the unconcious lives of his characters. In *The Graet Dictator*, the idea of the dictator kicking the ballon is a great metaphor, because it's Hitler making the world his toy. Chaplin made a buffoon of Hitler but not made him be the orge that he was. He combined fascism and ballet. Chaplin inspired Jacques Tati, Toto, Raj Kapoor, Billy Wilder. 
+* Actor and producer Norman Lloyd who knew Chaplin and Alfred Hitchcock: Hitch came from a middle class family, his father was a dealer, and Hitch always had an aspiration to be part of that world. Charlie came out of the direst poverty, his mom was put into an asylum, his father was a drinker, he and his half-brother had to steal rotten fruit. Such an upbringing was in his movies.
+### 片单
+Citizen Kane (1941) 
+
+The Thief of Bagdad (1924)
+
+Desire (1936)
+
+Gone with the Wind (1939)
+
+Gold Diggers of 1933 (1933)
+
+Singin' in the Rain (1952)
+
+The Maltese Falcon (1941)
+
+The Scarlet Empress (1934)
+
+The Cameraman (1928)
+
+One Week (1920)
+
+Sherlock Jr (1924)
+
+Three Ages (1923)
+
+Buster Keaton Rides Again (1965)
+
+The General (1926)
+
+Divine Intervention (2002)
+
+Limelight (1952)
+
+City Lights (1931)
+
+The Kid (1921)
+
+Bad Timing (1980)
+
+The Great Dictator (1940)
+
+Mr Hulot's Holiday (1953)
+
+Toto in Colour (1953)
+
+Awaara (1951)
+
+Sunset Blvd. (1950)
+
+Some Like it Hot (1959)
