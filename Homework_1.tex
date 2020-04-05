@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage{amsmath}
+\title{\textbf{Homework\_1}}
+\author{Haowei Luo\\2019201050019}
+\begin{document}
+\maketitle
+\noindent\Large{\textit{\textbf{{Game Theory for Applied Economists}}}
+
+\noindent\Large{\textbf{{Problem 1.2}}
+
+Strategies T, M for player 1 and strategies L, C, R for player 2 survive
+iterated elimination of strictly dominated strategies.
+
+The pure-strategy Nash equilibria are (M, L) and (T, R).
+
+\noindent\Large{\textbf{{Problem 1.6}}
+
+The payoff can be written here as:
+\begin{align*}
+    &\pi_1(q_1, q_2)=q_1[P(q_1+q_2)-c_1]=q_1[a-(q_1+q_2)-c_1] \\
+    &\pi_2(q_1, q_2)=q_2[P(q_1+q_2)-c_2]=q_2[a-(q_1+q_2)-c_2].
+\end{align*}
+
+For each firm, solving the optimization problem yields:
+\begin{align*}
+    q_i=1/2(a-q_j^*-c_i).
+\end{align*}
+
+Thus, if the quantity pair $(q_1^*, q_2^*)$ is to be a Nash equilibrium, the
+firms' quantity choices must satisfy:
+\begin{align*}
+    &q_1^*=1/2(a-q_2^*-c_1)\\
+    &q_2^*=1/2(a-q_1^*-c_2).
+\end{align*}
+
+Solving this pair of equations yields if $o<c_i<a/2$ for each firm
+\begin{align*}
+    &q_1^*=\frac{a+c_2-2c_1}{3}\\
+    &q_2^*=\frac{a+c_1-2c_2}{3}.
+\end{align*}
+
+If $C_1<C_2<a$ but $2C_2>a+C_1$, firm 2 will choose to exit this market, so
+\begin{align*}
+    &q_1^*=\frac{a-c_1}{2}\\
+    &q_2^*=0.
+\end{align*}
+
+\noindent\Large{\textbf{{Problem 1.8}}
+
+If there are two candidates, the pure strategy Nash equilibrium would be $(x_1^*=\frac{1}{2}, x_2^*=\frac{1}{2})$. If there were any deviation, the candidate who choose to stay at the platform of $x=1/2$ would get more votes and win the campaign, and no matter wherever another candiadate stays, the best response is to choose 0.5.
+
+If there are three candidates, there won't be a pure strategy Nash equilibrium.
+
+
+\noindent\Large{\textbf{{Problem 1.13}}
+
+There are 2 pure strategy Nash equilibria:
+\begin{equation*}
+    (Apply\ to\ Firm 1, Apply\ to\ Firm 2),
+\end{equation*}
+and
+\begin{equation*}
+    (Apply\ to\ Firm 2, Apply\ to\ Firm 1).
+\end{equation*}
+
+Assuming that the mixed stategy for Worker 1 is $(r, 1-r)$ and the mixed strategy for Worker 2 is $(p, 1-p)$, and because two workers are faced with the same condition, $r=p$. Worker 1's payoff will be:
+\begin{multline*}
+    U_1=\frac{1}{2}w_1rp+w_1r(1-p)+w_2(1-r)p+\frac{1}{2}w_2(1-r)(1-p).
+\end{multline*} 
+To optimize, the first order condition can be written as:
+\begin{align*}
+    \frac{\partial U_1}{\partial r}&=0\\
+    \frac{1}{2}w_1p+w_1(1-p)&=w_2p+\frac{1}{2}w_2(1-p)\\
+    r=p&=\frac{2w_1-w_2}{w_1+w_2}
+\end{align*}
+
+The mixed strategy Nash Equilibria is:
+\begin{align*}
+    \{&[(2w_1-w_2)/(w_1+w_2),(2w_2-w_1)/(w_1+w_2)],\\
+    &[(2w_1-w_2)/(w_1+w_2),(2w_2-w_1)/(w_1+w_2)]\}.
+\end{align*}
+
+\end{document}
