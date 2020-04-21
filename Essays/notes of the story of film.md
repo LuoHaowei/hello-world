@@ -146,8 +146,21 @@ Souls on the Road (1921)
 * Hollywood mainstream films in the 20s were entertaining and romantic. Were they innovative? Some of the most popular films of the 20s, the comedies, most certainly were.
 * The greatest American comedy directors: Buster Keaton, Charlie Chaplin and Harold Lloyd. Before them, there was mostly slapstick, sight gag, good but cheap laugh. 
 * Keaton was the greatest comic image-maker the cinema had yet seen. He thought like an architect. Keaton helped define silent cinema. 他的一系列作品显示他已掌握了剪辑的要领，领悟了电影是一场视觉的游戏，同时勇敢地亲自尝试完成特技戏份。Keaton's inventiveness was often highly planned, but sometimes spontaneous. In *The General*, every visual joke and setup in the first half is repeated and amplified in the second, but in reverse order. The climax of *The General* has been called: the most stunning visual event ever arranged. 他使用了桥梁垮塌，火车坠落这一桥段，银幕上的灾难都是来自真实的取景，此后火车损毁在电影中开始流行。Such scale, such sublime was a key element of silent film. At that time, labor was cheap, Wall Street hadn't crashed, imaginations were extarvagant and uncapped. Studios were not yet afraid of the size of directors' dreams. Eventually Keaton's dreams overstripped his box office, and he was sacked by MGM. Keaton filmed in deadpan, and kept back from the action. 即保持表演的冷静与克制，这一点影响了诸多后辈，如巴勒斯坦人 Elia Suleiman.
-* Chaplin was less into the camera than Keaton, he was far more into body movement. Chaplin thought like a dancer and a vaudevillian. The film *The Kid* humanized comic cinema, it showed Chaplin's passionate empathy with the poor. Chaplin was cinema's Charles Dickens. The Soviets thought of him as a marxist, but Chaplin was almost a Jungian too. He showed the unconcious lives of his characters. In *The Graet Dictator*, the idea of the dictator kicking the ballon is a great metaphor, because it's Hitler making the world his toy. Chaplin made a buffoon of Hitler but not made him be the orge that he was. He combined fascism and ballet. Chaplin inspired Jacques Tati, Toto, Raj Kapoor, Billy Wilder. 
+* Chaplin was less into the camera than Keaton, he was far more into body movement. Chaplin thought like a dancer and a vaudevillian. The film *The Kid* humanized comic cinema, it showed Chaplin's passionate empathy with the poor. Chaplin was cinema's Charles Dickens. The Soviets thought of him as a marxist, but Chaplin was almost a Jungian too. He showed the unconcious lives of his characters. In *The Graet Dictator*, the idea of the dictator kicking the ballon is a great metaphor, because it's Hitler making the world his toy. Chaplin made a buffoon of Hitler but not made him be the orge that he was. He combined fascism and ballet. Chaplin inspired Jacques Tati, Toto, Raj Kapoor, Billy Wilder. Chaplin co-funded United Artists, the studio was one of the great foundation stones of Hollywood. But to the country's shame, it kicked him out in the 50s, because he was a leftist. 
 * Actor and producer Norman Lloyd who knew Chaplin and Alfred Hitchcock: Hitch came from a middle class family, his father was a dealer, and Hitch always had an aspiration to be part of that world. Charlie came out of the direst poverty, his mom was put into an asylum, his father was a drinker, he and his half-brother had to steal rotten fruit. Such an upbringing was in his movies.
+* The comedian who was most influenced by Chaplin in the 20s was Harold Lloyd. At first Lloyd was too like Chaplin, but then he and his producer tried him in big black-rimmed glasses. In those days this was a nerd look. But add in his athleticism and the flinty courage and you get a ballsy dreamer, both aggresive and lyrical. Japan's great director Yasujiro Ozu was influenced by Lloyd.
+* Reality can break fantasy, and in the 20s, several filmmakers already realized this. They wanted to show real life, without the costumes and glitter. In 1921, an Irish-American explorer, Robert Flaherty, made the longest non-fiction film so far, *Nannook of the North*.  It's no travelogue. It stared into Nanook's face. It's about his psychology, his mythic struggle against the elements. Flaherty was a romantic, but by using non-actors, non-stars in this film. He made the audience look more ethically. And so documentary, as an art form, as a viable genre, was born. Documentary is often thought of as merely information, but in fact non-fiction cinema is amongst the most innovative. 
+* Eric Von Stroheim's drive to realism was more obsessive than Flaherty's. The story of *Greed* shows Stroheim's contempt for Hollywood romance. The finished movie ran 7h. Stroheim was the Emile Zola or Dostojevski of cinema. Cinematographer Carl: "Early in his life he was visited by such very great humiliation, such deep, inward, psychic wounds that there came in him and an insane desire to use his genius as a weapon." MGM hated the results. Stroheim's ultra-realism became a stigma. He didn't get to direct any more films. *Queen Kelly*, a sublime extravagant real movie from the 1920s, was directed by Eric Von Stroheim. For complicated reasons, the movie never saw the light of day.
+* *The Crowd* tried to portray 20s America with far more realism than romantic cinema. It became the greatest pre-Wall street crash social problem picture of its time. Vidor pushed realism in acting beyond the Hollywood norm. He films the leading actress in *The Crowd* in static shot, a longish take, no fancy clothes or set, just her growing despair. *The Crowd* was the 1st movie to use New York extensively as a location with hidden cameras. An overhead studio crane shot finds the actor among other identical desks, showing the scale of the office. 
+* MGM was uneasy about *The Crowds*'s refusal to romanticize ordinary New York life. They made Vidor shoot 7 different endings in various shades of optimism. 
+* *The Crowd* sums up a lot about cinema of the 20s and 30s. It showed mass society emerging, it focused on the everyman, as French films would do. And it showed the kinetic energy of cities, their rhythms and compositions, like the German movies of Fritz Lang and Walter Ruttmann and Soviet Union films of Dziga Vertov. 
+* In the Soviet Union in the 20s, *Aelita: Queen of Mars* played with rebellious idea of realism and cities. In *Posle Smerti*, the director Bauer used an open door to creat a slit on screen, like a Vermeer painting. And a natural main source light in the foreground was daring at that time. In this film, Bauer dissolves from nighttime blue to black and white to show a dream.
+* Where romantic cinema was usually optimistic, these early Russian films were laments, pessimistic in a way, about the realism of grief and loss and longing.
+* Danish director Carl Theodor Dreyer challenged romantic and fantasy cinema with such deeply felt realism that he was almost a one man reformation, undercutting the emotionalism of mainstream cinema with a spiritual spareness. In *The Passion of Joan of Arc*, there's no depth to the image, nothing in the background, no set and shadows. The walls were painted pink to remove their glare so as not to detract from the actress' face. Dreyer had them say the actual words that were spoken at the trial nearly 500 years earlier. He thought that this gave the scene conviction. 
+* Dreyer was born out of wedlock, adopted, and brought up a Lutheran. Though he didn't believe in God, the purity and plainness of Lutheran churches seemed to have formed his inner eye. He is the master of pared-down decor. He filmed on misty days or into the light to soften his imagery. His shots became paler, whiter. His huanting vampire movie *Vampyr* features shadows against a white wall. The shadows seem to have life of their own.  
+* Carl Theodor Dreyer: In *Ordet* I began a radical simplification. I'd only accept things directly related to the story...You can't simplify reality without understanding it first.
+* Dreyer's utterly spare use of whiteness was wildly rebellious. Hollywood romantic cinema was supposed to be decorative, full of detail, not blank. In *Gertrud*, he filmed the girl who believed completely in the power of love if through a white scrim, as if in heaven.
+* Dreyer's radical reduction influenced Lars Von Trier in *Dogville*.
 ### 片单
 Citizen Kane (1941) 
 
@@ -198,3 +211,57 @@ Awaara (1951)
 Sunset Blvd. (1950)
 
 Some Like it Hot (1959)
+
+Luke's Moody Muddle (1916)
+
+Haunted Spooks (1920)
+
+Never Weaken (1921)
+
+Safety Last (1928)
+
+I Flunked, But (1930)
+
+Nannook of the North (1922)
+
+The House is Black (1963)
+
+Sans Soleil (1983)
+
+The Not Dead (2007)
+
+The Five Obstructions (2003)
+
+Blind Husbands (1919)
+
+The Lost Squadron (1932)
+
+Greed (1924)
+
+Stroheim in Vienna (1948)
+
+Sunset Blvd. (1950)
+
+The Crowd (1928)
+
+The Apartment (1960)
+
+The Trial (1962)
+
+Aelita: Queen of Mars (1924)
+
+Posle Smerti (1915)
+
+The Passion of Joan of Arc (1928)
+
+Ordet (1955)
+
+The President (1919)
+
+Vampyr (1932)
+
+Gertrud (1964)
+
+Dogville (2003)
+
+Vivre sa Vie (1962)
