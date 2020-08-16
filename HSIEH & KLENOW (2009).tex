@@ -1,0 +1,265 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\title{Hsieh \& Klenow (2009)}
+\author{Haowei Luo}
+\begin{document}
+\maketitle
+Chang-Tai Hsieh, Peter J. Klenow, Misallocation and Manufacturing TFP in China and India, The Quarterly Journal of Economics, Volume 124, Issue 4, November 2009, Pages 1403–1448
+\section*{INTRODUCTION}
+Large differences in output per worker between rich and poor countries have been attributed, in no small part, to differences in total factor productivity (TFP).What are the underlying causes of these large TFP differences? Research on this question has largely focused on differences in technology within representative firms. These are models of within-firm inefficiency, with the inefficiency varying across countries.
+
+\begin{itemize}
+    \item Howitt (2000) and Klenow and Rodríguez-Clare (2005) show how
+large TFP differences can emerge in a world with slow technology diffusion from advanced countries to other countries.
+\end{itemize}
+
+A different approach:
+\begin{itemize}
+    \item Instead of focusing on the efficiency of a representative firm,Restuccia and Rogerson (2008) suggest that misallocation of resources across firms can have important effects on aggregate TFP.
+\end{itemize}
+
+Explanation: imagine an economy with two firms that have identical technologies but in which the firm with political connections benefits from subsidized credit (say from a state-owned bank) and the other firm (without political connections) can only borrow at high interest rates from informal financial markets. Assuming that both firms equate the marginal product of capital with the interest rate, the marginal product of capital of the firm with access to subsidized credit will be lower than the marginal product of the firm that only has access to informal financial markets. This is a clear case of capital misallocation: aggregate output would be higher if capital was reallocated from the firm with a low marginal product to the firm with a high marginal product. The misallocation of capital results in low aggregate output per worker and TFP.
+
+Many institutions and policies can potentially result in resource misallocation. 
+\begin{itemize}
+    \item the McKinsey Global Institute (1998) argues that a key factor behind low productivity in Brazil’s retail sector is labor-market regulations driving up the cost of labor for supermarkets relative to informal retailers that have lower productivity. The lower cost of labor makes it possible for them to command a large share of the Brazilian retail sector.
+    \item Lewis (2004) describes many similar case studies.
+\end{itemize}
+
+China and India are of particular interest not only because of their size and relative poverty, but because they have carried out reforms that may have contributed to their rapid growth in recent years. The United States is a critical benchmark for us, a comparatively undistorted country.
+
+\begin{itemize}
+    \item For discussion of Chinese reforms, see Young (2000, 2003) and The Economist (2006b). For Indian reforms, see Kochar et al. (2006), The Economist (2006a), and Aghion et al. (2008). Dobson and Kashyap (2006), Farrell and Lund (2006), Allen et al. (2007), and Dollar and Wei (2007) discuss how capital continues to be misallocated in China and India.
+\end{itemize}
+
+We build on four papers in particular.
+\begin{itemize}
+    \item Restuccia and Rogerson (2008) is the closest predecessor to our investigation in model and method.
+    \item We follow the lead of Chari, Kehoe, and McGrattan (2007) in inferring distortions from the residuals in first-order conditions.
+    \item The distinction between a firm’s physical productivity and its revenue productivity, highlighted by Foster, Haltiwanger, and Syverson (2008), is central to our estimates of resource misallocation.
+    \item Banerjee and Duflo (2005) emphasize the importance of resource misallocation in understanding aggregate TFP differences across countries. Gaps in marginal products of capital in India could play a large role in low manufacturing TFP relative to that of the United States.
+\end{itemize}
+
+A number of other authors have focused on specific mechanisms that could result in resource misallocation. 
+\begin{itemize}
+    \item Hopenhayn and Rogerson (1993) studied the impact of labor market regulations on allocative efficiency. Lagos (2006) is a recent
+    effort in this vein.
+    \item Caselli and Gennaioli (2003) and Buera and Shin (2008) model inefficiencies in the allocation of capital to managerial talent.
+    \item Guner, Ventura, and Xu (2008) model misallocation due to size restrictions. 
+    \item Parente and Prescott (2000) theorize that low-TFP countries are ones in which vested interests block firms from introducing better technologies.
+\end{itemize}
+
+The rest of the paper proceeds as follows.
+\begin{itemize}
+    \item We sketch a model of monopolistic competition with heterogeneous firms to show how the misallocation of capital and labor can lower aggregate TFP.
+    \item We then take this model to the Chinese, Indian, and U.S. plant data to try to quantify the drag on productivity in China and India due to misallocation in manufacturing. 
+    \item We lay out the model in Section II, describe the data sets in Section III, and present potential gains from better allocation in Section IV. 
+    \item In Section V we try to assess whether greater measurement error in China and India could explain away our results. 
+    \item In Section VI we make a first pass at relating observable policies to allocative efficiency in China and India. 
+    \item In Section VII we explore alternative explanations besides policy distortions and measurement error. 
+    \item We offer some conclusions in Section VIII.
+\end{itemize}
+
+\section*{MISALLOCATION AND TFP}
+
+This section sketches a standard model of monopolistic competition with heterogeneous firms to illustrate the effect of resource misallocation on aggregate productivity. 
+
+\begin{itemize}
+    \item We assume there is a single final good $Y$ produced by a representative firm in a perfectly competitive final output market. 
+    \item This firm combines the output $Y_s$ of $S$ manufacturing industries using a Cobb-Douglas production technology:
+    \begin{equation*}
+        Y=\prod^{S}_{s=1}Y^{\theta_s}_s, \text{where} \sum^S_{s=1}\theta_s=1
+   \end{equation*}
+   \item $P_s$ refers to the price of industry output $Y_s$
+   \item $P$ represents the price of the final good (the final good
+   is our numeraire, and so $P = 1$). 
+\end{itemize}
+
+According to properties of Cobb-Douglas production functions, $\theta_s$ is the income share and the output elasticity with respect to $Y_s$.
+\begin{align*}
+    P_sY_s&=\theta_sPY \\
+    PY&=\frac{P_sY_s}{\theta_s}\\
+    &=\prod^{S}_{s=1}(P_sY_s/\theta_s)^\theta_s\\
+    P&\equiv \prod^{S}_{s=1} (P_s/\theta_s)^\theta_s
+\end{align*}
+
+\begin{itemize}
+    \item Industry output $Y_s$ is itself a CES aggregate of $M_s$ differentiated products:
+    \begin{equation*}
+        Y_s=\biggl(\sum_{i=1}^{M_s}Y_{si}^{\frac{\delta-1}{\delta }}\biggr)^\frac{\delta}{\delta-1}
+    \end{equation*}
+    \item The production function for each differentiated product is given by a Cobb-Douglas function of firm TFP, capital, and labor:
+    \begin{equation*}
+        Y_{si}=A_{si}K_{si}^{\alpha_s}L_{si}^{1-\alpha_s}
+    \end{equation*}
+    \item capital and labor shares are allowed to differ across industries (but not across firms within an industry). In Section VII (“Alternative Explanations”), we relax this assumption by replacing the plant-specific capital distortion with plant-specific factor shares.
+    \item we can separately identify distortions that affect both capital and labor from distortions that change the marginal product of one of the factors relative to the other factor of production. 
+    \item We denote distortions that increase the marginal products of capital and labor by the same proportion as an output distortion $\tau_Y$. 
+    \item We denote distortions that raise the marginal product of capital relative to labor as the capital distortion $\tau_K$.
+\end{itemize}
+
+$\tau_Y$ would be high for firms that face government restrictions on size or high transportation costs, and low in firms that benefit from public output subsidies. $\tau_K$ would be high for firms that do not have access to credit, but low for firms with access to cheap credit (by business groups or state-owned banks).
+
+Profits can be written as:
+\begin{equation*}
+    \pi_{si}=(1-\tau_{Y_{si}})P_{si}Y_{si}-wL_{si}-(1+\tau_{K_{si}})RK_{si}
+\end{equation*}
+
+$Y$ increases in $Y_s$ monotonically. More output $Y$ means more output $Y_s$ of each manufacturing industry. Thus to produce the maximum amount of $Y$, we must solve the maximization problem of $Y_s$.
+\begin{align*}
+    Max \quad & Y_s=\biggl(\sum_{i=1}^{M_s}Y_{si}^{\frac{\delta-1}{\delta }}\biggr)^\frac{\delta}{\delta-1}\\
+    s.t. \quad & \sum_{i=1}^{M_s} P_{si}Y_{si}=P_sY_s=\theta_sPY
+\end{align*}
+The Lagarangian function can be written as:
+\begin{equation*}
+    L=\biggl(\sum_{i=1}^{M_s}Y_{si}^{\frac{\delta-1}{\delta }}\biggr)^\frac{\delta}{\delta-1}-\lambda(\sum_{i=1}^{M_s} P_{si}Y_{si}-P_sY_s)
+\end{equation*}
+The first order conditions are:
+\begin{align*}
+    &\frac{\partial L}{\partial Y_{si}}=Y_s^{\frac{1}{\delta-1}}Y_{si}^{-\frac{1}{\delta}}-\lambda P_{si}=0\\
+    &\frac{\partial L}{\partial \lambda}=\sum_{i=1}^{M_s} P_{si}Y_{si}-P_sY_s=0
+\end{align*}
+Then
+\begin{align*}
+    &Y_{si}=\frac{Y_s^{\frac{\delta}{\delta-1}}}{(\lambda P_{si})^\delta}\\
+    &\sum_{i=1}^{M_s} P_{si} \frac{Y_s^{\frac{\delta}{\delta-1}}}{(\lambda P_{si})^\delta}=P_sY_s\\
+    &\lambda^{-\delta}Y_s^{\frac{\delta}{\delta-1}}\sum_{i=1}^{M_s} P_{si}^{1-\delta}=P_sY_s\\
+    &\lambda^{-\delta}=P_sY_s^{\frac{1}{1-\delta}}[\sum_{i=1}^{M_s} P_{si}^{1-\delta}]^{-1}\\
+    &Y_{si}=P_sY_sP_{si}^{-\delta}[\sum_{i=1}^{M_s} P_{si}^{1-\delta}]^{-1}
+\end{align*}
+Profit maximization yields the standard condition that the firm’s output price is a fixed markup over its marginal cost:
+\begin{equation*}
+    P_{si}=\frac{\delta}{\delta-1}(\frac{R}{\alpha_s})^{\alpha_s}(\frac{w}{1-\alpha_s})^{1-\alpha_s}\frac{(1+\tau_{K_{si}})^{\alpha_s}}{A_{si}(1-\tau_{Y_{si}})}
+\end{equation*}
+The capital-labor ratio, labor allocation, and output are given by:
+\begin{align*}
+    &\frac{K_{si}}{L_{si}}=\frac{\alpha_s}{1-\alpha_s}\cdot\frac{w}{R}\cdot\frac{1}{(1+\tau_{K_{si}})}\\
+    &L_{si} \propto \frac{A_{si}^{\delta-1}(1-\tau_{Y_{si}})^\delta}{(1+\tau_{K_{si}})^{\alpha_s(\delta-1)}}\\
+    &Y_{si} \propto \frac{A_{si}^\delta(1-\tau_{Y_{si}})^\delta}{(1+\tau_{K_{si}})^{\alpha_s\delta}}
+\end{align*}
+Obviously, the allocation of resources across firms depends not only on firm TFP levels, but also on the output and capital distortions they face, and this will result in dispersion in the marginal revenue products of labor and capital across firms (revenue productivity is the product of physical productivity and a firm's output price). The marginal revenue product of labor and capital can be defined as:
+\begin{align*}
+    &MRPL_{si} \triangleq (1-\alpha_s) \frac{\delta-1}{\delta} \frac{P_{si}Y_{si}}{L_{si}}=w \frac{1}{1-\tau_{Y{si}}}\\
+    &MRPK_{si} \triangleq \alpha_s \frac{\delta-1}{\delta} \frac{P_{si}Y_{si}}{K_{si}}=R \frac{1+\tau_{K_si}}{1-\tau_{Y_{si}}}
+\end{align*}
+After accounting for distortions, intuitively $MRPL_{si}$ and $MRPK_{si}$ are equalized across firms. To solve for the equilibrium allocation of resources across sectors, we derive the aggregate demand for capital and labor in a sector by aggregating the firm-level demands for the two factor inputs. We then combine the aggregate demand for the factor inputs in each sector with the allocation of total expenditure across sectors.
+\begin{align*}
+    &L_s \equiv \sum_{i=1}^{M_s}L_{si}=L\frac{(1-\alpha_s)\theta_s/\overline{MRPL_s}}{\sum_{s\prime=1}^S(1-\alpha_{s\prime})\theta_{s\prime}/\overline{MRPL_{s\prime}}}\\
+    &K_s \equiv \sum_{i=1}^{M_s}K_{si}=K\frac{\alpha_s\theta_s/\overline{MRPK_s}}{\sum_{s\prime=1}^S\alpha_{s\prime}\theta_{s\prime}/\overline{MRPK_{s\prime}}}
+\end{align*}
+$\overline{MRPL_s}$ and $\overline{MRPK_s}$ denote the weighted average of the value of the marginal product of labor and capital in a sector. $L \equiv \sum_{s=1}^S L_s$ and $K \equiv \sum_{s=1}^S K_s$ represent the aggregate supply of labor and capital.
+\begin{align*}
+    &\overline{MRPL_s} \propto (\sum_{i=1}^{M_s} \frac{1}{1-\tau_{Y_{si}}}\frac{P_{si}Y_{si}}{P_sY_s})\\
+    &\overline{MRPK_s} \propto (\sum_{i=1}^{M_s} \frac{1+\tau_{K_{si}}}{1-\tau_{Y_{si}}}\frac{P_{si}Y_{si}}{P_sY_s})\\
+    &Y=\prod_{s=1}^S (TFP_s \cdot K_s^{\alpha_s} L_s^{1-\alpha_s})^{\theta_s}\\
+\end{align*}
+
+Firm-specific distortions can be measured by the firm’s revenue productivity. 
+\begin{itemize}
+    \item Foster, Haltiwanger, and Syverson (2008) stress that, when industry deflators are used, differences in plant-specific prices show up in the customary measure of plant TFP.
+    \item They stress the distinction between “physical productivity,” which they denote $TFPQ$, and “revenue productivity,” which they call $TFPR$.
+    \item The use of a plant-specific deflator yields $TFPQ$, whereas using an industry deflator gives $TFPR$.
+\end{itemize}
+We define these objects as follows:
+\begin{align*}
+    &TFPQ_{si} \triangleq A_{si} = \frac{Y_{si}}{K_{si}^{\alpha_s}(wL_{si})^{1-\alpha_s}}\\
+    &TFPR_{si} \triangleq P_{si}A_{si} = \frac{P_{si}Y_{si}}{K_{si}^{\alpha_s}(wL_{si})^{1-\alpha_s}}
+\end{align*}
+To crudely control for differences in human capital we measure labor input as the wage bill, which we denote as the product of a common wage per unit of human capital $w$ and effective labor input $L_{si}$.
+
+Without distortions, more capital and labor should be allocated to plants with higher $TFPQ$ to the point where their higher output results in a lower price and the exact same $TFPR$ as at smaller plants. In our simple model, $TFPR$ does not vary across plants within an industry unless plants face capital and/or output distortions. According to definitions of $MRPK_{si}$ and $MRPL_{si}$, plant $TFPR$ is proportional to a geometric average of them:
+\begin{align*}
+    TFPR_{si}&=\frac{\delta}{\delta-1} (\frac{MRPK_{si}}{\alpha_s})^{\alpha_s} (\frac{MRPL_{si}}{w(1-\alpha_s)})^{1-\alpha_s}\\
+    &=(\frac{R}{\alpha_s})^{\alpha_s} (\frac{1}{1-\alpha_s})^{1-\alpha_s} \frac{(1+\tau_{K_{si}})^{\alpha_s}}{1-\tau_{Y_{si}}}
+\end{align*}
+High plant TFPR is a sign that the plant confronts barriers that raise the plant’s marginal products of capital and labor, rendering the plant smaller than optimal.
+\begin{align*}
+    &TFP_s=[\sum_{i=1}^{M_s} (A_{si} \cdot \frac{\overline{TFPR_s}}{TFPR_{si}})^{\delta-1}]^{\frac{1}{\delta-1}}\\
+    &\overline{TFPR_s} \propto (\overline{MRPK_s})^{\alpha_s}(\overline{MRPL_s})^{1-\alpha_s}
+\end{align*}
+If marginal products were equalized across plants, TFP would be $\overline{A_s}=(\sum_{i=1}^{M_s} A_{si}^{\delta-1})^{\frac{1}{\delta-1}}$.When $TFPQ$ and $TFPR$ are jointly lognormally distributed
+\begin{equation*}
+    logTFP_s=\frac{1}{\delta-1} log(\sum_{i=1}^{M_s} A_{si}^{\delta-1})-\frac{\delta}{2}var(logTFPR_{si})
+\end{equation*}
+In this special case, the negative effect of distortions on aggregate $TFP$ can be summarized by the variance of $log TFPR$. When there is greater dispersion of marginal products, the extent of misallocation is worse.
+\begin{itemize}
+    \item The shares of aggregate labor and capital in each sector are unaffected by the extent of misallocation as long as average marginal revenue products are unchanged. Cobb-Douglas aggregator (unit elastic demand) is responsible for this. An industry that is 1\% more efficient has a 1\% lower price index and 1\% higher demand.
+    \item We have conditioned on a fixed aggregate stock of capital. Because the rental rate rises with aggregate TFP, we would expect capital to respond to aggregate TFP (even with a fixed saving and investment rate). If we endogenize K by invoking a consumption Euler equation to pin down the long-run rental rate R, the output elasticity with respect to aggregate TFP is $1/(1-\sum_{s=1}^S\alpha_s\theta_s)$. Thus the effect of misallocation on output is increasing in the average capital share. This property is reminiscent of a one-sector neoclassical growth model, wherein increases in TFP are amplified by capital accumulation so that the output elasticity with respect to TFP is $1/(1 − α)$.
+    \item we assume that the number of firms in each industry is not affected by the extent of misallocation.
+\end{itemize}
+
+\section*{Data Sets for India, China, and the United States}
+    \begin{itemize}
+    \item Our data for India are drawn from India’s ASI conducted by the Indian government’s Central Statistical Organisation. The survey provides information on plant characteristics over the fiscal year (April of a given year through March of the following year). We use the ASI data from the 1987–1988 through 1994–1995 fiscal years.
+    \item The variables in the ASI that we use are the plant’s industry (four-digit ISIC), labor compensation, value-added, age (based on reported birth year), and book value of the fixed capital stock.
+    
+    Our measure of labor compensation is the sum of wages, bonuses, and benefits. 
+
+    We take the average of the net book value of fixed capital at the beginning and end of the fiscal year as our measure of the plant’s capital.
+
+    We also have ownership information from the ASI, although the ownership classification does not distinguish between foreign-owned and domestic plants.
+
+    \item Our data for Chinese firms (not plants) are from Annual Surveys of Industrial Production from 1998 through 2005 conducted by the Chinese government’s National Bureau of Statistics. Hereafter
+    we often refer to Chinese firms as “plants.”
+    \item The information we use from the Chinese data are the plant’s industry (again at the four-digit level), age (again based on reported birth year), ownership, wage payments, value-added, export revenues, and capital stock. 
+    
+    We define the capital stock as the book value of fixed capital net of depreciation.
+
+    The Chinese data only report wage payments; they do not provide information on nonwage compensation.The median labor share in plant-level data is significantly lower than the aggregate labor share in manufacturing reported in the Chinese input-output tables and the national accounts (roughly 50\%). Therefore we create a adjustment factor.
+
+    We also have ownership status for the Chinese plants.
+    \item Our main source for U.S. data is the Census of Manufactures (CM) from 1977, 1982, 1987, 1992, and 1997 conducted by the U.S. Bureau of the Census.
+    \item The information we use from the U.S. Census are the plant’s industry (again at the four-digit level), labor compensation (wages and benefits), value-added, export revenues, and capital stock.
+    
+    We define the capital stock as the average of the book value of the plant’s machinery and equipment and structures at the beginning and at the end of the year. 
+
+    The U.S. data do not provide information on plant age. We impute the plant’s age by determining when the plant appears in the data for the first time.
+    \item For our computations we set industry capital shares to those in the corresponding U.S. manufacturing industry. As a result, we drop nonmanufacturing plants and plants in industries without a close counterpart in the United States. We also trim the 1\% tails of plant productivity and distortions in each country-year to make the results robust to outliers. 
+    \end{itemize}
+
+\section*{Potential Gains From Reallocation}
+We set the rental price of capital (excluding distortions) to R = 0.10. We have in mind a 5\% real interest rate and a 5\% depreciation rate. The actual cost of capital faced by plant $i$ in industry $s$ is denoted $(1 + \tau_{K_{si}})R$ depreciation rate. Because our hypothetical reforms collapse $\tau_{K_{si}}$ to its average in each industry, the attendant efficiency gains do not depend on R. If we have set R incorrectly, it affects only the average capital distortion, not the liberalization experiment.
+
+We set the elasticity of substitution between plant valueadded to $\delta = 3$. The gains from liberalization are increasing in σ. Of course, the elasticity surely differs across goods (Broda and Weinstein report lower elasticities for more differentiated goods), so our single $\delta$ is a strong simplifying assumption.
+
+We set the elasticity of output with respect to capital in each industry ($\alpha_s$) to be 1 minus the labor share in the corresponding industry in the United States. We cannot separately identify the average capital distortion and the capital production elasticity in each industry. We adopt the U.S. shares as the benchmark because we presume the United States is comparatively undistorted.
+
+When translating factor shares into production elasticities is the division of rents from markups in these differentiated good industries, we assume these rents show up as payments to labor (managers) and capital (owners) pro rata in each industry. 
+
+We infer the distortions and productivity for each plant in each  country-year as follows:
+\begin{align*}
+    &1+\tau_{K_{si}}=\frac{\alpha_s}{1-\alpha_s} \frac{wL_{si}}{RK_{si}}\\
+    &1-\tau_{Y_{si}}=\frac{\delta}{\delta-1} \frac{wL_{si}}{(1-\alpha_s)P_{si}Y_{si}}\\
+    &A_{si}=w^{1-\alpha_s} (P_sY_s)^{-\frac{1}{\delta-1}} P_s^{-1} \frac{(P_{si}Y_{si})^{\frac{\delta}{\delta-1}}}{K_{si}^{\alpha_s}L_{si}^{1-\alpha_s}}
+\end{align*}
+We infer the presence of a capital distortion when the ratio of labor compensation to the capital stock is high relative to what one would expect from the output elasticities with respect to capital and labor. We deduce an output distortion when labor’s share is low compared with what one would think from the industry elasticity of output with respect to labor (and the adjustment for rents).
+
+Although we do not observe the scalar, relative productivities—and hence reallocation gains—are unaffected by setting $w^{1-\alpha_s} (P_sY_s)^{-\frac{1}{\delta-1}} P_s^{-1} = 1$ for each industry s. we do not observe each plant’s real output $Y_{si}$, but rather its nominal output $P_{si}Y_{si}$. Plants with high real output, however, must have a lower price to explain why buyers would demand the higher output. We therefore raise $P_{si}Y_{si}$ to the power, an assumed elasticity of demand, $\delta/(\delta − 1)$ to arrive at $Y_{si}$. For labor input we use the plant’s wage bill, earnings per worker may vary more across plants because of differences in hours worked and human capital per worker than because of worker rents. 
+
+Before calculating the gains from our hypothetical liberalization, we trim the 1\% tails of $log(TFPR_{si}/\overline{TFPR_s})$ and $log(A_{si}/\overline{A_s})$ across industries. 
+
+There is manifestly more TFPQ dispersion in India than in China, but this could reflect the different sampling frames (small private plants are underrepresented
+in the Chinese survey). The U.S. and Indian samples are more comparable. The left tail of TFPQ is far thicker in India than the United States, consistent with policies favoring the survival of inefficient plants in India relative to the United States.
+
+There is clearly more dispersion of TFPR in India than in the United States. Even China, despite not fully sampling small private establishments, exhibits notably greater TFPR dispersion than the United States. 
+
+Ownership is less important for India (around 0.6\% of the variance) than in China (over 5\%). All four sets of dummies, ownership (state ownership categories), age (quartiles), size (quartiles), and region (provinces or states), together account for less than 5\% of the variance of $TFPR$ in India and 10\% of the variance of $TFPR$ in China.
+
+It is useful to ask how government-guaranteed monopoly power might show up in our measures of $TFPQ$ and $TFPR$. Plants that charge high markups should evince higher $TFPR$ levels. If they are also protected from entry of nearby competitors, they may also exhibit high $TFPQ$ levels. Whereas we frame high $TFPR$ plants as being held back by policy distortions, such plants may in fact be happily restricting their output. Still, such variation in $TFPR$ is socially inefficient, and aggregate $TFP$ would be higher if such plants expanded their output.
+
+We next calculate “efficient” output in each country so we can compare it with actual output levels. If marginal products were equalized across plants in a given industry, then industry $TFP$ would be $\overline{A_s}=(\sum_{i=1}^{M_s}A_{si}^{\delta-1})^{\frac{1}{\delta-1}}$
+\begin{equation*}
+    \frac{TFP}{TFP_{efficient }}=\prod_{s=1}^S \biggl[ \sum_{i=1}^{M_s}(\frac{A_{si}}{\overline{A_s}} \frac{\overline{TFPR_s}}{TFPR_{si}})^{\delta-1} \biggr]^{\theta_s/(\delta-1)}
+\end{equation*}
+
+This exercise heroically makes no allowance for measurement error or model misspecification which could lead us to overstate room for efficiency gains from better allocation. Full liberalization, by this calculation, would boost aggregate manufacturing TFP by 86\%–115\% in China, 100\%–128\% in India, and 30\%–43\% in the United States.
+
+In all three countries the hypothetical efficient size (measured as plant value-added) distribution is more dispersed than the actual one. In particular, there should be fewer mid-sized plants and more small and large plants. In addition, in China and India the most populous column of efficient/actual output level is 0\%–50\% for every initial size quartile. Many state-favored behemoths in China and India would be downsized. Still, initially large plants are less likely to shrink and more likely to expand in both China and India (a pattern much less pronounced in the United States). Thus TFPR increases with size more strongly in China and India than in the United States. The positive size-TFPR relation in India is consistent with Banerjee and Duflo’s (2005) contention that Indian policies constrain its most efficient producers and coddle its least efficient ones.
+
+For China, hypothetically moving to “U.S. efficiency” might have boosted TFP by 50\% in 1998, 37\% in 2001, and 30\% in 2005. Compared to the 1997 U.S. benchmark, Chinese allocative efficiency improved 15\% (1.5/1.3) from 1998 to 2005, or 2.0\% per year. For India, meanwhile, hypothetically moving to U.S. efficiency might have raised TFP around 40\% in 1987 or 1991, and 59\% in 1994. Thus we find no evidence of improving allocations in India over 1987 to 1994. The implied decline in allocative efficiency of 12\%, or 1.8\% per year from 1987 to 1994, is surprising given that many Indian reforms began in the late 1980s.
+
+The closest estimates of the actual TFP growth we could find are by Bosworth and Collins (2007). They report Chinese industry TFP growth of 6.2\% per year from 1993 to 2004 and Indian industry TFP growth of 0.3\% per year from 1978 to 1993. Thus, our point estimate for China (2\% per year) would suggest that perhaps one-third of its TFP growth could be attributed to better allocation of resources. For India, our evidence for worsening allocations might help to explain its minimal TFP growth. We crudely estimate that U.S. manufacturing TFP in 1997 was 130\% higher than China’s in 1998, and 160\% higher than India’s in 1994.17 Therefore, our estimates suggest that resource misallocation might be responsible for roughly 49\% (log(1.5)/log(2.3)) of the TFP gap between the United States and China and 35\% (log(1.4)/log(2.6)) of the TFP gap between the United States and India.
+
+
+\end{document}

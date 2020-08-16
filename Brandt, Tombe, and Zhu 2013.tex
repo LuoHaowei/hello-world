@@ -1,0 +1,320 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\title{Brandt, Tombe, and Zhu 2013}
+\author{Haowei Luo}
+\begin{document}
+    \maketitle
+    Brandt, Loren, Trevor Tombe, and Xiaodong Zhu. 2013. “Factor Market Distortions across Time, Space and Sectors in China.” Review of Economic Dynamics 16 (1): 39–58. https://doi.org/10.1016/j.red.2012.10.002.
+
+    \section*{A framework for measuring factor market distortions}
+    Consider an economy with $m$ provinces, indexed by $i = 1,...,m$, and two sectors, state and non-state, indexed by $j = s,n$,respectively.
+
+    Cobb–Douglas production technologies with the same factor elasticities in all provinces and sectors:
+    \begin{equation}
+        Y_{ij}=A_{ij}L_{ij}^{\alpha}K_{ij}^{1-\alpha},\ 0<\alpha<1
+    \end{equation}
+    We assume that provincial GDP is a CES aggregate of goods produced in the two sectors and the aggregate GDP is a CES aggregate of provincial GDPs:
+    \begin{align}
+        &Y_i=(Y_{in}^{1-\phi}+Y_{is}^{1-\phi})^{\frac{1}{1-\phi}}\\
+        &Y=\Bigl(\sum_{i=1}^m \omega_i Y_i^{1-\sigma}\Bigr)^{\frac{1}{1-\sigma}}
+    \end{align}
+    $\sigma,\ \phi>0$: imperfect substitute, to avoid the result that absent distortions all factors flow to the province and sector with the highest TFP level
+    
+    \subsection*{Factor allocation and aggregate TFP}
+    $L_i=L_{in}+L_{is},\ K_i=K_{in}+K_{is},\ L=\sum_{i=1}^m L_i,\ K=\sum_{i=1}^m K_i,\\ l_{j|i}=L_{ij}/L_i,\ k_{j|i}=K_{ij}/K_i,\ l_i=L_i/L\ k_i=K_i/K$
+    
+    Factor allocation: $\{l_i,k_i,l_{j|i},k_{j|i}\}_{i=1,\dots,m;j=n,s}$
+
+    For any given set of province-sector specific TFPs, $A_{ij}$
+    \begin{align*}
+        A_i&=[Y_{is}^{1-\phi}+Y_{is}^{1-\phi}]^{\frac{1}{1-\phi}}/(L_i^\alpha K_i^{1-\alpha})\\ & =[(A_{is} l_{s|i}^\alpha k_{s|i}^{1-\alpha})^{1-\phi}+(A_{in} l_{n|i}^\alpha k_{n|i}^{1-\alpha})^{1-\phi}]^{\frac{1}{1-\phi}}\\ A &=\Bigl[ \sum_{i=1}^m \omega_i Y_i^{1-\sigma} \Bigr]^{\frac{1}{1-\sigma}}/(L^\alpha K^{1-\alpha})\\ & =\Bigl[ \sum_{i=1}^m \omega_i (A_i l_i^\alpha k_i^{1-\alpha})^{1-\sigma}\Bigr]^{\frac{1}{1-\sigma}}
+    \end{align*}
+
+    We call the allocation that maximizes the aggregate TFP (or, equivalently, the aggregate output, since aggregate $L$ and $K$ are given) the efficient allocation and the corresponding aggregate TFP the efficient TFP. Notice that there're no wedges untill firm's problem. If there are factor market distortions, the actual allocation may deviate from the efficient allocation and the actual aggregate TFP may be lower than the efficient TFP. We use the resulting TFP loss as a measure of the cost of factor market distortions.
+
+    \subsection*{Efficient allocation and TFP losses from distortions}
+    The efficient allocation is the solution to the following social planner’s problem:
+    \begin{equation*}
+        \max_{L_{ij},K_{ij}}Y
+    \end{equation*}
+    subject to (1), (2), (3) and
+    \begin{align}
+        &\sum_{ij}L_{ij}=L\\ &\sum_{ij}K_{ij}=K
+    \end{align}
+
+    \theoremstyle{plain}
+    \newtheorem{prop}{Proposition}
+
+    \theoremstyle{plain}
+    \newtheorem{de}{Definition}
+    
+    \begin{prop}
+        For any given $L$ and $K$, the allocation that maximizes the aggregate GDP is given by:
+        \begin{align*}
+            &\frac{L_{ij}}{L_i}=\frac{K_{ij}}{K_i}=\pi_{j|i}\\
+            &\frac{L_i}{L}=\frac{K_i}{K}=\pi_i
+        \end{align*}
+        where
+        \begin{align*}
+            &\pi_{j|i}=\bigl(\frac{A_{ij}}{A_i^*}\bigr)^{\frac{1-\phi}{\phi}}=\frac{A_{ij}^{\frac{1-\phi}{\phi}}}{A_{is}^{\frac{1-\phi}{\phi}}+A_{in}^{\frac{1-\phi}{\phi}}}\\
+            &\pi=\frac{\omega_i^{\frac{1}{\sigma}} (A_i^*)^{\frac{1-\sigma}{\sigma}}}{\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} (A_i^*)^{\frac{1-\sigma}{\sigma}}}
+        \end{align*}
+        and
+        \begin{equation*}
+            A_i^*=[A_{is}^{\frac{1-\phi}{\phi}}+A_{in}^{\frac{1-\phi}{\phi}}]^{\frac{\phi}{1-\phi}}
+        \end{equation*}
+    \end{prop}
+
+    \begin{proof}
+        See the proof of Proposition 2 below. The optimal allocation in this proposition is a special case of the competitive equilibrium when all wedges are set to one.
+    \end{proof}
+
+    Proposition 1 says that to maximize output, the share of capital and labour allocated to a sector and province should equal the “TFP share” in the sector and province, as defined by $\pi_{j|i}$ and $\pi_i$ . Under the efficient allocation, it can be shown that $A_i^*$ is the provincial TFP and aggregate TFP is
+    \begin{equation*}
+        A^*=\Bigl[ \sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} (A_i^*)^{\frac{1-\sigma}{\sigma}} \Bigr]^{\frac{\sigma}{1-\sigma}}
+    \end{equation*}
+    For any given allocation and the associated aggregate and provincial TFP A and Ai , we can then measure proportional TFP losses due to distortions in the aggregate and in a province as follows:
+    \begin{equation*}
+        D=\ln(A^*/A)\ \text{and}\ D_i=\ln(A_i^*/A_i)
+    \end{equation*}
+
+    \subsection*{Factor allocation in a competitive market with distortions}
+    
+    We consider three distortions: province-specific output wedges and sector-pro-vince specific capital and labour wedges.
+
+    \subsubsection*{Firms’ problem}
+    The profit maximization problem for producing the aggregate GDP, $Y$,is
+    \begin{equation*}
+        \max_{Y_i, i=1,\dots,m} \Bigl\{ P \Bigl( \sum_{i=1}^m \omega_i Y_i^{1-\sigma} \Bigr)^{\frac{1}{1-\sigma}} -\sum_{i=1}^m \tau_i^y P_i Y_i \Bigr\}
+    \end{equation*}
+    which implies the following first order conditions:
+    \begin{equation}
+        \tau_i^y P_i=\omega_i P \Bigl( \frac{Y_i}{Y} \Bigr)^{-\sigma},\ i=1,\dots,m
+    \end{equation}
+    Here $\tau_i^y$ is a wedge between marginal cost and marginal revenue of using $Y_i$ in aggregate production ($\tau_i^y=MR/MC$). We will simply call it the output wedge of province i.
+
+    The profit maximization problem of producing $Y_i$ is
+    \begin{equation*}
+        \max_{Y_{is},Y_{in}} \{P_i (Y_{in}^{1-\phi}+Y_{is}^{1-\phi})^{\frac{1}{1-\phi}}-P_{is}Y_{is}-P_{in}Y_{in} \}
+    \end{equation*}
+    and the first order conditions are
+    \begin{equation}
+        P_{ij}=P_i \Bigl( \frac{Y_{ij}}{Y_i} \Bigr)^{-\phi},\ j=s,n; i=1,\dots,m
+    \end{equation}
+
+    Using the definition of $Y_i$, (2), and the definition of $Y$, (3), it can be shown that
+    \begin{align*}
+        &\frac{P_{ij}}{P_i}=\Bigl( \frac{Y_{ij}}{Y_i} \Bigr)^{-\phi}\\
+        &Y_{ij}^{-\phi}=Y_i^{-\phi}\frac{P_{ij}}{P_i}\\
+        &(Y_{ij}^{-\phi})^{\frac{\phi-1}{\phi}}=Y_{ij}^{1-\phi}=Y_i^{1-\phi} \Bigl( \frac{P_{ij}}{P_i} \Bigr)^{\frac{\phi-1}{\phi}}\\
+        &Y_{in}^{1-\phi}+Y_{is}^{1-\phi}=Y_i^{1-\phi}\\
+        &\Rightarrow\\
+        &\Bigl( \frac{P_{in}}{P_i} \Bigr)^{\frac{\phi-1}{\phi}}+\Bigl( \frac{P_{is}}{P_i} \Bigr)^{\frac{\phi-1}{\phi}}=1\\
+    \end{align*}
+    so
+    \begin{equation}
+        P_i=(P_{is}^{\frac{\phi-1}{\phi}}+P_{in}^{\frac{\phi-1}{\phi}})^{\frac{\phi}{\phi-1}}
+    \end{equation}
+    and in a similar way
+    \begin{align*}
+        &\frac{\tau_i^y P_i}{P} Y^{-\sigma}=\omega_i Y_i^{-\sigma}\\
+        &\omega_i Y_i^{1-\sigma}=\omega_i^{\frac{1}{\sigma}} \Bigl( \frac{\tau_i^y P_i}{P} \Bigr)^{\frac{\sigma-1}{\sigma}} Y^{1-\sigma}\\
+        &\sum_{i=1}^m \omega_i Y_i^{1-\sigma}=Y^{1-\sigma}\\
+        &\Rightarrow\\
+        &\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \Bigl( \frac{\tau_i^y P_i}{P} \Bigr)^{\frac{\sigma-1}{\sigma}}=1\\
+    \end{align*}
+    so
+    \begin{equation}
+        P=\Bigl( \sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \hat{P}_i^{\frac{\sigma-1}{\sigma}} \Bigr)^{\frac{\sigma}{\sigma-1}}
+    \end{equation}
+    Here,
+    \begin{equation}
+        \hat{P}_i=\tau_i^y P_i
+    \end{equation}
+
+The stand-in firm’s profit maximization problem in province i and sector j is
+\begin{equation*}
+    \max_{K_{ij},L_{ij}} \{ P_{ij}A_{ij}L_{ij}^{\alpha}K_{ij}^{1-\alpha}-\tau_{ij}^l w L_{ij}-\tau_{ij}^k r K_{ij} \}
+\end{equation*}
+$w$ is the wage, $r$ is the rental price of capital, and $\tau_{ij}^l$ and $\tau_{ij}^k$ are labour and capital wedges. The standard first-order conditions of the problem are:
+\begin{align}
+    &\alpha P_{ij}A_{ij}L_{ij}^{\alpha-1}K_{ij}^{1-\alpha}=\tau_{ij}^l w\\
+    &(1-\alpha)P_{ij}A_{ij}L_{ij}^\alpha K_{ij}^{-\alpha}=\tau_{ij}^k r
+\end{align}
+
+\begin{de}
+    For any given set of wedges $\{\tau_i^y, \tau_{ij}^l, \tau_{ij}^k\}_ {i=1,\dots,m; j=n,s}$,the competitive equilibrium is a set of prices
+    $\{P, P_i , P_{ij}\}_{i=1,\dots,m; j=n,s}$,output $\{Y, Y_i , Y_{ij}\}\\_{i=1,\dots,m; j=n,s}$, employments and capital stocks $\{L_{ij}, K_{ij}\}_{i=1,\dots,m; j=n,s}$ such that Eqs. (1) to (12) hold. The corresponding set of shares of employment and capital stock $\{l_i,k_i, l_{j|i},k_{j|i}\}_{i=1,...,m; j=n,s}$ is called the competitive allocation implemented by the set of wedges $\{ \tau_i^y, \tau_{ij}^l, \tau_{ij}^k\}_{i=1,\dots,m; j=n,s}$.
+\end{de}
+
+\begin{prop}
+    Given any set of positive wedges $\{ \tau_i^y, \tau_{ij}^l, \tau_{ij}^k\}_{i=1,\dots,m; j=n,s}$, let
+    \begin{align*}
+        &\tilde{\tau}_{ij}^l=\tau_i^y \tau_{ij}^l,\ \tilde{\tau}_{ij}^k=\tau_i^y \tau_{ij}^k\\
+        &\tilde{A}_{ij}=\frac{A_{ij}}{\tilde{\tau}_{ij}^{l\alpha} \tilde{\tau}_{ij}^{k 1-\alpha}},\ \tilde{A}_i=[\tilde{A}_{is}^{\frac{1-\phi}{\phi}}+\tilde{A}_{in}^{\frac{1-\phi}{\phi}}]^{\frac{\phi}{1-\phi}}\\
+        &\tilde{\tau}_i^l=\Bigl( \frac{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{l-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{l-1}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}}+\tilde{A}_{in}^{\frac{1-\phi}{\phi}}} \Bigr)^{-1},\ \tilde{\tau}_i^k=\Bigl( \frac{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{k-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{k-1}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}}+\tilde{A}_{in}^{\frac{1-\phi}{\phi}}} \Bigr)^{-1}
+    \end{align*}
+    and
+    \begin{equation*}
+        \tilde{\tau}^l= \Bigl( \frac{\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1}}{\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}}} \Bigr)^{-1},\ \tilde{\tau}^k= \Bigl( \frac{\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{k-1}}{\sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}}} \Bigr)^{-1}
+    \end{equation*}
+    Then the competitive allocation implemented by the set of wedges is uniquely determined by the following equations:
+    \begin{equation*}
+        l_{j|i}=\frac{\tilde{A}_{ij}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{ij}^{l-1}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{l-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{l-1}},\ k_{j|i}=\frac{\tilde{A}_{ij}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{ij}^{k-1}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{k-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{k-1}}
+    \end{equation*}
+    and
+    \begin{equation*}
+        l_i=\frac{\omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1}}{\sum_{i^\prime=1}^m \omega_{i^\prime}^{\frac{1}{\sigma}} \tilde{A}_{i^\prime}^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_{i^\prime}^{l-1}},\  k_i=\frac{\omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{k-1}}{\sum_{i^\prime=1}^m \omega_{i^\prime}^{\frac{1}{\sigma}} \tilde{A}_{i^\prime}^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_{i^\prime}^{k-1}}
+    \end{equation*}
+    Furthermore, the corresponding provincial and aggregate TFP are given by the next two equations:
+    \begin{equation*}
+        A_i=\tilde{A}_i \tilde{\tau}_{i}^{l\alpha} \tilde{\tau}_{i}^{k 1-\alpha}
+    \end{equation*}
+    and
+    \begin{equation*}
+        A=\Bigl[  \sum_{i=1}^m \omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \Bigr]^{\frac{\sigma}{1-\sigma}} \tilde{\tau}^{l\alpha} \tilde{\tau}^{k 1-\alpha}
+    \end{equation*}
+\end{prop}
+
+\begin{proof}
+    Remember the standard first-order conditions of the stand-in firm's profit maximization problem in province i and sector j, take the ratio of (11) and (12) yields the following:
+    \begin{equation}
+        \frac{K_{ij}}{L_{ij}}=\Bigl( \frac{\tau_{ij}^l w}{\alpha} \Bigr) \Bigl( \frac{\tau_{ij}^k r}{1-\alpha} \Bigr)^{-1}
+    \end{equation}
+    Substituting it into (11), we have
+    \begin{equation*}
+        \alpha P_{ij} A_{ij} \Bigl[ \frac{\tau_{ij}^l w}{\alpha} \frac{\tau_{ij}^k r}{1-\alpha} \Bigr]^{1-\alpha}=\tau_{ij}^l w
+    \end{equation*}
+    Solving for $P_{ij}$ yields
+    \begin{equation*}
+        P_{ij}=A_{ij}^{-1} \Bigl( \frac{\tau_{ij}^l w}{\alpha} \Bigr)^\alpha \Bigl( \frac{\tau_{ij}^k r}{1-\alpha} \Bigr)^{1-\alpha}=A_{ij}^{-1} \tau_{ij}^{l\alpha} \tau_{ij}^{k 1-\alpha} \lambda_p
+    \end{equation*}
+    where
+    \begin{equation*}
+        \lambda_p=\Bigl( \frac{w}{\alpha} \Bigr)^\alpha \Bigl( \frac{r}{1-\alpha} \Bigr)^{1-\alpha}
+    \end{equation*}
+    By the definition of $\tilde{A}_{ij}$ in the proposition, we have
+    \begin{equation*}
+        A_{ij}^{-1} \tau_{ij}^{l\alpha} \tau_{ij}^{k 1-\alpha}= \Bigl[\frac{A_{ij}\tau_i^{y}}{\tilde{\tau}_{ij}^{l\alpha} \tilde{\tau}_{ij}^{k 1-\alpha}} \Bigr]^{-1}=\tilde{A}_{ij}^{-1} {\tau_i^{y}}^{-1}
+    \end{equation*}
+    \begin{equation}
+        P_{ij}=\tilde{A}_{ij}^{-1} {\tau_i^{y}}^{-1} \lambda_p
+    \end{equation}
+    Thus according to (8) and the definition of $\tilde{A}_i$,
+    \begin{equation*}
+        P_i=(P_{is}^{\frac{\phi-1}{\phi}}+P_{in}^{\frac{\phi-1}{\phi}})^{\frac{\phi}{\phi-1}}=\tilde{A}_{i}^{-1} {\tau_i^{y}}^{-1} \lambda_p
+    \end{equation*}
+    Note that
+    \begin{equation*}
+        Y_{ij}=A_{ij}L_{ij}^{\alpha}K_{ij}^{1-\alpha}=A_{ij} \Bigl( \frac{K_{ij}}{L_{ij}} \Bigr)^{1-\alpha} L_{ij}
+    \end{equation*}
+    Thus, from (13), we have
+    \begin{equation}
+        \begin{aligned}
+        Y_{ij}&=A_{ij}\Bigl( \frac{\tau_{ij}^l w}{\alpha} \Bigr)^{1-\alpha} \Bigl( \frac{\tau_{ij}^k r}{1-\alpha} \Bigr)^{\alpha-1} L_{ij}\\
+        &= \frac{A_{ij}}{\tilde{\tau}_{ij}^{l\alpha} \tilde{\tau}_{ij}^{k 1-\alpha}} \tau_{ij}^l \tau_i^y \lambda_L L_{ij}\\
+        &=\tilde{A}_{ij} \tilde{\tau}_{ij}^l \lambda_L L_{ij}
+        \end{aligned}
+    \end{equation}
+    where
+    \begin{equation*}
+        \lambda_L=\Bigl( \frac{w}{\alpha} \Bigr)^{1-\alpha} \Bigl( \frac{r}{1-\alpha} \Bigr)^{\alpha-1}
+    \end{equation*}
+    Substituting (15) into equation (2) yields the following
+    \begin{equation}
+        \begin{aligned}
+            Y_i&=[(\tilde{A}_{in} \tilde{\tau}_{in}^l L_{in})^{1-\phi} + (\tilde{A}_{is} \tilde{\tau}_{is}^l L_{is})^{1-\phi}]^{\frac{1}{1-\phi}} \lambda_L\\
+            &=[(\tilde{A}_{in} \tilde{\tau}_{in}^l l_{n|i})^{1-\phi} + (\tilde{A}_{is} \tilde{\tau}_{is}^l l_{s|i})^{1-\phi}]^{\frac{1}{1-\phi}} \lambda_L L_i\\
+            &=u_i \lambda_L L_i
+        \end{aligned}
+    \end{equation}
+    Let 
+    \begin{equation*}
+        u_i=[(\tilde{A}_{in} \tilde{\tau}_{in}^l l_{n|i})^{1-\phi} + (\tilde{A}_{is} \tilde{\tau}_{is}^l l_{s|i})^{1-\phi}]^{\frac{1}{1-\phi}}
+    \end{equation*}
+    From (7), (8), (14), (15) and (16), we have
+    \begin{equation*}
+        \frac{P_{ij}}{P_i}=\frac{\tilde{A}_i}{\tilde{A}_{ij}}=\Bigl( \frac{\tilde{A}_{ij} \tilde{\tau}_{ij}^l \lambda_L L_{ij}}{u_i \lambda_L L_i} \Bigr)^{-\phi}=\Bigl( \frac{\tilde{A}_{ij} \tilde{\tau}_{ij}^l l_{j|i}}{u_i} \Bigr)^{-\phi}
+    \end{equation*}
+    Solving for $l_{j|i}$
+    \begin{equation*}
+        l_{j|i}=u_i \tilde{A}_i^{-\frac{1}{\phi}} \tilde{A}_{ij}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{ij}^{l-1}
+    \end{equation*}
+    By definition,
+    \begin{equation*}
+        1=l_{s|i}+l_{n|i}=u_i \tilde{A}_i^{-\frac{1}{\phi}} (\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{l-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{l-1})
+    \end{equation*}
+    which implies that
+    \begin{align*}
+        u_i&=\frac{\tilde{A}_i^{\frac{1}{\phi}}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{l-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{l-1}}=\tilde{A}_i \tilde{\tau}_i^l\\
+        Y_i&=\tilde{A}_i \tilde{\tau}_i^l \lambda_L L_i
+    \end{align*}
+    and
+    \begin{equation}
+        l_{j|i}=\frac{\tilde{A}_{ij}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{ij}^{l-1}}{\tilde{A}_{is}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{is}^{l-1} + \tilde{A}_{in}^{\frac{1-\phi}{\phi}} \tilde{\tau}_{in}^{l-1}}
+    \end{equation}
+    From (6), we have 
+    \begin{equation*}
+        \frac{P_i}{P}=\frac{\tilde{A}_{i}^{-1} {\tau_i^{y}}^{-1} \lambda_p}{P}=\frac{\omega_i}{\tau_i^y} \Bigl( \frac{Y_i}{Y} \Bigr)^{-\sigma}=\frac{\omega_i}{\tau_i^y} \Biggl( \frac{\tilde{A}_i \tilde{\tau}_i^l l_i}{\Bigl[\sum_{i=1}^m \omega_i (\tilde{A}_i \tilde{\tau}_i^l l_i)^{1-\sigma}\Bigr]^{\frac{1}{1-\sigma}}} \Biggr) ^{-\sigma}
+    \end{equation*}
+    Let 
+    \begin{equation*}
+        u=\Bigl[\sum_{i=1}^m \omega_i (\tilde{A}_i \tilde{\tau}_i^l l_i)^{1-\sigma}\Bigr]^{\frac{1}{1-\sigma}}
+    \end{equation*}
+    then, we have
+    \begin{equation*}
+        \frac{\tilde{A}_{i}^{-1} \lambda_p}{P}=\omega_i \Bigl(\frac{\tilde{A}_i \tilde{\tau}_i^l l_i}{u}\Bigr)^{-\sigma}
+    \end{equation*}
+    or 
+    \begin{equation*}
+        l_i=u \Bigl( \frac{P}{\lambda_p} \Bigr)^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1} \omega_i^{\frac{1}{\sigma}}
+    \end{equation*}
+    By definition,
+    \begin{equation*}
+        1=\sum_{i=1}^m l_i=u \Bigl( \frac{P}{\lambda_p} \Bigr)^{\frac{1}{\sigma}} \sum_{i=1}^m \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1} \omega_i^{\frac{1}{\sigma}}
+    \end{equation*}
+    which implies that
+    \begin{equation*}
+        u \Bigl( \frac{P}{\lambda_p} \Bigr)^{\frac{1}{\sigma}}= \Bigl( \sum_{i=1}^m \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1} \omega_i^{\frac{1}{\sigma}} \Bigr)^{-1}
+    \end{equation*}
+    and
+    \begin{equation}
+        l_i=\frac{\omega_i^{\frac{1}{\sigma}} \tilde{A}_i^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_i^{l-1}}{\sum_{i^\prime=1}^m \omega_{i^\prime}^{\frac{1}{\sigma}} \tilde{A}_{i^\prime}^{\frac{1-\sigma}{\sigma}} \tilde{\tau}_{i^\prime}^{l-1}}
+    \end{equation}
+    Equation (17) and (18) provide the expression for the equilibrium labour allocation for the given set of wedges. The equilibrium capital allocation $k_{j|i}$ and $k_i$ can be solved in a similar way (taking advantage of $K_{ij}/L_{ij}$).
+
+    From these expressions it is clear that multiplying wedges in all provinces and sectors by a positive constant will not change the resulting equilibrium allocation of labour and capital.
+\end{proof}
+
+\begin{prop}
+    Next, we show, for any given allocation and a vector of provincial prices, how we can identify the set of wedges that implement the competitive equilibrium. First, note that
+    \begin{equation*}
+        L_{ij} \propto l_{j|i} l_i,\ K_{ij} \propto k_{j|i} k_i
+    \end{equation*}
+    So,
+    \begin{equation*}
+        Y_{ij} \propto A_{ij}(l_{j|i} l_i)^\alpha (k_{j|i} k_i)^{1-\alpha} \equiv \tilde{Y}_{ij}
+    \end{equation*}
+    and
+    \begin{equation*}
+        Y_i \propto (\tilde{Y}_{in}^{1-\phi} + \tilde{Y}_{is}^{1-\phi})^{\frac{1}{1-\phi}} \equiv \tilde{Y}_i
+    \end{equation*}
+    From equation (7), then, we have
+    \begin{equation*}
+        P_{ij}=P_i Y_{ij}^{-\phi} Y_i^\phi \propto P_i \tilde{Y}_{ij}^{-\phi} \tilde{Y}_i^\phi
+    \end{equation*}
+    From (11), (12)
+    \begin{equation}
+        \tau_{ij}^l \propto \frac{P_{ij} Y_{ij}}{L_{ij}} \propto \frac{P_{ij} \tilde{Y}_{ij}}{l_{j|i} l_i}
+    \end{equation}
+    \begin{equation}
+        \tau_{ij}^k \propto \frac{P_{ij} Y_{ij}}{K_{ij}} \propto \frac{P_{ij} \tilde{Y}_{ij}}{k_{j|i} k_i}
+    \end{equation}
+    Finally, from (6) we have
+    \begin{equation}
+        \tau_i^y=P_i^{-1} \omega_i P \Bigl( \frac{Y_i}{Y} \Bigr)^{-\sigma} \propto P_i^{-1} \omega_i \tilde{Y}_i^{-\sigma}
+    \end{equation}
+\end{prop}
+\end{document}

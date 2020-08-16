@@ -1,0 +1,408 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\title{Herrendorf, Rogerson, and Valentinyi 2014}
+\author{Haowei Luo}
+\begin{document}
+    \maketitle
+    Herrendorf, Berthold, Richard Rogerson, and Ákos Valentinyi. 2014. “Chapter 6 - Growth and Structural Transformation.” In Handbook of Economic Growth, edited by Philippe Aghion and Steven N. Durlauf, 2:855–941. Handbook of Economic Growth. Elsevier. 
+
+    Since this chapter is not available to the WHU library, so I read the corresponding NBER working paper.
+    
+    \section{Introduction}
+    \section{The Stylized Facts of Structural Transformation}
+    \section{Modeling Structural Transformation and \\Growth}
+    \subsection{Background: A Two–Sector Version of the Growth Model}
+    \begin{equation}
+        \sum_{t=0}^\infty \beta^t log C_t
+    \end{equation}
+    where $0 < \beta < 1$ is the discount factor. For simplicity, we assume that the household doesn't value leisure. The household is endowed with one unit of productive time and an initial stock of capital, $K_0$.
+    
+    We begin our characterization of the equilibrium by establishing that the capital–to–labor ratios are equalized across sectors at each point in time. The first-order conditions for the stand–in firm in sector consumption (C) are given by:
+    \begin{align*}
+        &\max_{k_{ct},n_{ct}} P_t C_t- R_t k_{ct}^\theta- W_t n_{ct}\\
+        &\theta P_t k_{ct}^{\theta-1} (A_{ct} n_{ct})^{1-\theta}-R_t=0\\
+        &R_t=P_t \theta \biggl( \frac{k_{ct}}{n_{ct}} \biggr)^{\theta-1} A_{ct}^{1-\theta}\\
+        &(1-\theta) P_t k_{ct}^\theta (A_{ct} n_{ct})^{-\theta} A_{ct}-W_t=0\\
+        &W_t=P_t (1-\theta) \biggl( \frac{k_{ct}}{n_{ct}} \biggr)^\theta A_{ct}^{1-\theta}
+    \end{align*}
+    Because the price of the investment good is normalized as the numerator, F.O.C. for the stand-in firm in sector investment (X) are:
+    \begin{equation*}
+        R_t=\theta \biggl( \frac{k_{xt}}{n_{xt}} \biggr)^{\theta-1} A_{xt}^{1-\theta},\ W_t=(1-\theta) \biggl( \frac{k_{xt}}{n_{xt}} \biggr)^\theta A_{xt}^{1-\theta}
+    \end{equation*}
+    The wage rate is the same among different sectors, and so is the rental rate. Combining these equations and rearranging gives an expression for the capital-labor ratio in sector $i \in \{c,x\}$
+    \begin{align*}
+        K_t&=k_{ct}+k_{xt}=\frac{k_ct}{n_{ct}}n_{ct}+\frac{k_{xt}}{n_{xt}}n_{xt}\\
+        &\frac{k_ct}{n_{ct}}=\frac{k_{xt}}{n_{xt}},\ n_{ct}+n_{xt}=1
+    \end{align*}
+    \begin{equation}
+        K_t=\frac{k_{it}}{n_{it}}=\frac{\theta}{1-\theta}\frac{W_t}{R_t}
+    \end{equation}
+    Next, we establish that the equilibrium value of the relative price $P_t$ is pinned down by technology. To see this, since $R_t$ is constant across sectors:
+    \begin{equation*}
+        \frac{P_t (1-\theta) \biggl( \frac{k_{ct}}{n_{ct}} \biggr)^\theta A_{ct}^{1-\theta}}{(1-\theta) \biggl( \frac{k_{xt}}{n_{xt}} \biggr)^\theta A_{xt}^{1-\theta}}=1
+    \end{equation*}
+    \begin{equation}
+        P_t=\biggl( \frac{A_{xt}}{A_{ct}} \biggr)^{1-\theta}
+    \end{equation}
+    Equations (2) and (3) imply that
+    \begin{equation*}
+        P_tC_t=\biggl( \frac{A_{xt}}{A_{ct}} \biggr)^{1-\theta} k_{ct}^\theta (A_{ct} n_{ct})^{1-\theta}=K_t^\theta A_{xt}^{1-\theta} n_{ct}
+    \end{equation*}
+    It follows that the model aggregates on the production side, that is, we can consider an aggregate production function that produces a single good that can be turned into either consumption or investment via a linear technology with marginal rate of transformation equal to $P_t$:
+    \begin{equation}
+        Y_t=X_t+P_tC_t=K_t^\theta (A_{xt})^{1-\theta} (n_{xt}+n_{ct})=K_t^\theta (A_{xt})^{1-\theta}
+    \end{equation}
+    Additionally, equation (2) and the F.O.C. for the firm in the investment sector imply that:
+    \begin{align}
+        &R_t = \theta K_t^{\theta-1} A_{xt}^{1-\theta} = \frac
+        {\partial Y_t}{\partial K_t} \\
+        &W_t = (1-\theta) K_t^\theta A_{xt}^{1-\theta}
+    \end{align}
+    To characterize the competitive equilibrium further, we turn to the household side. The household’s maximization problem is:
+    \begin{equation*}
+        \max_{\{ C_t,K_{t+1} \}_{t=0}^{\infty}} \sum_{t=0}^{\infty} \beta^t log C_t \ \ \ \ s.t.\ P_tC_t+K_{t+1}=(1-\sigma+R_t)K_t+W_t
+    \end{equation*}
+    Note that if total consumption grows at a constant rate $\gamma_c$, which will be the case below when we consider generalized balanced growth, then the household’s objective function remains finite, and so is well defined. The reason for this is that
+    \begin{equation*}
+        \sum_{t=0}^{\infty} \beta^t log C_t = log C_0+logC_0(1+\gamma_c)\sum_{t=1}^{\infty} \beta^t t < \infty 
+    \end{equation*}
+    In every period t, the budget constraint must be satisfied, so the Lagrangian is given by:
+    \begin{align*}
+        &\mathcal{L}(C_t,K_{t},\mu_t)=\sum_{t=0}^{\infty} \beta^t log C_t- \sum_{t=0}^\infty \mu_t [P_tC_t+K_{t+1}-(1-\sigma+R_t)K_t-W_t]\\
+        &\frac{\partial \mathcal{L}}{\partial C_t}=\frac{\beta^t}{C_t}-\mu_t P_t=0,\ \ \ \ \ \ \ \ \frac{\partial \mathcal{L}}{\partial K_t}=-\mu_{t-1}+\mu_t(1-\sigma+R_t)=0
+    \end{align*}
+    Combining these two F.O.C.s gives the Euler equation:
+    \begin{equation}
+        \frac{P_tC_t}{P_{t-1}C_{t-1}}=\beta(1-\sigma+R_t)
+    \end{equation}
+    Using equations (4) and (5) and a transversality condition, equation (7) can be written as a second–order difference equation in the aggregate capital stock $K_t$.
+    \begin{align*}
+        &\frac{K_t(1-\sigma+K_t^{\theta-1}A_{xt}^{1-\theta})-K_{t+1}}{K_{t-1}(1-\sigma+K_{t-1}^{\theta-1}A_{xt-1}^{1-\theta})-K_{t}}=\beta(1-\sigma+\theta K_t^{\theta-1} A_{xt}^{1-\theta})
+    \end{align*}
+    Given a value for the initial capital stock, the equilibrium sequence of capital stocks is determined.
+
+    We are now ready to consider the possibility of a balanced growth path in this model. We start by assuming that both technologies improve at constant, though not necessarily equal, rates $\gamma_i > 0$:
+    \begin{equation*}
+        \frac{A_{it+1}}{A_it}=1+\gamma_i,\ \ \ \ i=c,x
+    \end{equation*}
+    The standard balanced growth requires that endogenous variables grow at constant rates, which is too strict for models with structural transformation because the very nature of structural transformation is that the sectoral composition changes. We use the weaker concept of generalized balanced growth path (GBGP), which requires that the real interest rate is constant. The motivation for this is that although real interest rate may exhibit short–term fluctuations, it does not show a long–term trend.
+
+    Kaldor facts
+    \begin{itemize}
+        \item the real interest rate is constant
+        \item $K_t$ and $Y_t$ grow at constant rates
+        \item $K_t/Y_t$ and $R_tK_t/Y_t$ are constant
+    \end{itemize}
+
+    \theoremstyle{plain}
+    \newtheorem{pro}{Proposition}
+    \begin{pro}
+        If a GBGP exists, then the Kaldor facts hold along the GBGP.
+    \end{pro}
+    \begin{proof}
+        Since $R_t$ is constant along a GBGP, it suffices to show that $K_t$, $Y_t$ and $X_t$ all grow at rate $\gamma_x$.
+
+        The fact that R is constant and equation (5) holds in period t and t+1 implies:
+        \begin{equation*}
+            \theta K_t^{\theta-1} A_{xt}^{1-\theta} = \theta K_{t+1}^{\theta-1} A_{xt+1}^{1-\theta}
+        \end{equation*}
+        \begin{equation}
+            \frac{A_{xt+1}}{A_{xt}}=\frac{K_{t+1}}{K_t}
+        \end{equation}
+        It follows that $K_t$ also grows at the constant rate of $\gamma_x$. Using equation (4) we have:
+        \begin{equation}
+            \frac{Y_{t+1}}{Y_t}=\biggl( \frac{A_{xt+1}}{A_{xt}} \biggr)^{1-\theta} \biggl( \frac{K_{t+1}}{K_t} \biggr)^\theta
+        \end{equation}
+        Using equation (8), this gives:
+        \begin{equation}
+            \frac{Y_{t+1}}{Y_t}=(1+\gamma_x)^{1-\theta}(1+\gamma_x)^\theta=1+\gamma_x
+        \end{equation}
+        As for investment $X_t$
+        \begin{align*}
+            &\frac{K_{t+1}}{K_t}=1-\sigma+\frac{X_t}{K_t}=1+\gamma_x\\
+            &X_t=(\sigma+\gamma_x)K_t
+        \end{align*}
+        Obviously, $X_t$ also grows at $\gamma_x$. The fact that the aggregate technology is Cobb–Douglas implies that factor shares are constant even off a GBGP.
+    \end{proof}
+    
+    If $Y_t$ and $X_t$ both grow at $\gamma_x$, equation (4) implies that $P_tC_t$ must also grow at the same rate. Substituting this growth rate into equation (7) pins down the constant value of the rental rate of capital along a GBGP:
+    \begin{equation*}
+        R=\frac{1}{\beta}(1+\gamma_x)-(1-\sigma)
+    \end{equation*}
+    Given a value for $A_{x0}$, using the constant level of R and equation (5), we obtain the unique value of $K_0$ along a GBGP:
+    \begin{equation}
+        K_0=\biggl[ \frac{\beta \theta}{(1+\gamma_x)-\beta(1-\sigma)} \biggr]^{\frac{1}{1-\theta}} A_{x0}
+    \end{equation}
+    According to (3)
+    \begin{align*}
+        \frac{P_{t+1}}{P_t}&=\biggl( \frac{A_{xt+1}}{A_{xt}} \biggr)^{1-\theta} \biggl( \frac{A_{ct+1}}{A_{ct}} \biggr)^{\theta-1}\\
+        &=[(1+\gamma_x)/(1+\gamma_c)]^{1-\theta}\\
+        \frac{C_{t+1}}{C_t}&=\frac{P_{t+1}C_{t+1}}{P_tC_t} \frac{P_t}{P_{t+1}}\\
+        &=(1+\gamma_x)^\theta /(1+\gamma_c)^{\theta-1}
+    \end{align*}
+    In other words, $C_t$ grows at a weighted average of the two sectoral growth rates in technology.
+    \begin{align*}
+        X_t&=K_t^\theta A_{xt}^{1-\theta} n_{xt}\\
+        \frac{X_{t+1}}{X_t}&=\frac{K_{t+1}^\theta A_{xt+1}^{1-\theta} n_{xt+1}}{K_t^\theta A_{xt}^{1-\theta} n_{xt}}\\
+        1+\gamma_x&=(1+\gamma_x)^{\theta} (1+\gamma_x)^{1-\theta} \frac{n_{xt+1}}{n_{xt}}\\
+        \frac{n_{xt+1}}{n_{xt}}&=1,\ \ \ \ n_{xt}=\frac{k_{xt}}{K_t}=constant\ \zeta\\
+    \end{align*}
+    It follows that sectoral employment and capital shares are constant along the balanced growth path. Although in this model differential rates of technological progress lead to changes in relative prices of sectoral outputs, these price changes are not associated with any changes in factor allocations over time.
+
+    For future reference, it is of interest to note that constant technology growth in both sectors is not required for the existence of a GBGP. Even if the growth rate of technological progress in the consumption sector varied over time, the allocation of labor and capital wouldn't be affected. While in this case not all variables would grow at constant rates, it would still be true that the rental rate on capital would be constant and that $Y_t$ and $K_t$ would grow at the same constant rate. Thus, there would still be a GBGP.
+    
+    \subsection{A Benchmark Model of Growth and Structural Transformation}
+    \subsubsection{Set up of the Benchmark Model}
+    Using the model of the previous section as the starting point, we now assume that $C_t$ is composite of agricultural consumption $(c_{at})$, manufacturing consumption $(c_{mt})$ and service consumption $(c_{st})$:
+    \begin{equation}
+        C_t=\biggl[ \omega_a^{\frac{1}{\varepsilon}} (c_{at}-\bar{c}_a)^\frac{\varepsilon-1}{\varepsilon} + \omega_m^{\frac{1}{\varepsilon}} (c_{mt})^\frac{\varepsilon-1}{\varepsilon} + \omega_s^{\frac{1}{\varepsilon}} (c_{st}+\bar{c}_s)^\frac{\varepsilon-1}{\varepsilon} \biggr]^{\frac{\varepsilon}{\varepsilon-1}}
+    \end{equation}
+    $\bar{c}_i,\ \omega_i \ge 0$ and $\varepsilon >0$. Although the function form (12) is a parsimonious choice. It captures two features on the demand side that are potentially important for understanding the reallocation across sectors: how the demand of the household reacts to changes in income and in relative prices. Because of the existence of $\bar{c}_i$, if consumption choices satisfy
+    \begin{equation*}
+        C_t(c_{at^\prime},c_{mt^\prime},c_{st^\prime})=C_t(c_{at^{\prime\prime}},c_{mt^{\prime\prime}},c_{st^{\prime\prime}})
+    \end{equation*}
+    this equality doesn't hold between $\{\alpha c_{at^\prime},\alpha c_{mt^\prime},\alpha c_{st^\prime}\}$ and $\{\alpha c_{at^{\prime\prime}},\alpha c_{mt^{\prime\prime}},\\\alpha c_{st^{\prime\prime}}\}$, that is, the period utility function is non–homothetic and therefore it's possible that changes in income will lead to changes in expenditure shares even if relative prices are constant. $\varepsilon$ influences the elasticity of substitution between the three goods which is not exactly $\varepsilon$ because of the non-homotheticity terms and represents the response of nominal expenditure shares to changes in relative prices. 
+    
+    There are four Cobb–Douglas production functions in this model.
+    \begin{align}
+        &c_{it}=k_{it}^\theta (A_{it} n_{it})^{1-\theta},\ \ \ \ \ \ i \in \{a,m,s\}\\
+        &X_t=k_{xt}^\theta (A_{xt} n_{xt})^{1-\theta}
+    \end{align}
+    We follow much of the literature in abstracting from the differences between physical capital and land and treating land as part of physical capital. There are still important applications for which it is crucial that land is a fixed factor. For such applications one needs to model land and physical capital separately.
+ 
+    There is a tradition in the literature of working with only three production functions, with the assumption that all investment is produced by the manufacturing sector. We have not adopted this specification for two reasons:
+    \begin{itemize}
+        \item Despite the apparent reasonableness of the claim that investment is to first approximation produced exclusively by the manufacturing sector, this assumption is becoming increasingly at odds with the data over time, partly due to the fact that software is both a sizeable and increasing component of investment, and most software innovation takes place in the service sector. In fact, total investment has exceeded the size of the entire manufacturing sector in the US since 2000.
+        \item Greenwood et al (1997): technological progress in the investment sector has been more rapid than in the rest of the economy. And differential rates of technology growth may play a key role in the subsequent analysis.
+    \end{itemize}
+
+    Capital is accumulated as usual:
+    \begin{equation*}
+        K_{t+1}=(1-\sigma)K_t+X_t
+    \end{equation*}
+    The feasibility conditions are:
+    \begin{align*}
+        &K_t=k_{at}+k_{mt}+k_{st}+k_{xt}\\
+        &1=n_{at}+n_{mt}+n_{st}+n_{xt}
+    \end{align*}
+
+    \subsubsection{Equilibrium Properties of the Benchmark Model}
+    We consider a sequence of markets-competitive equilibrium in which the price of the investment good is normalized to one in each period. The relative prices of the consumption goods are denoted by $p_{it}$, $i \in \{ a,m,s \}$. We assume that the household accumulates capital and rents it to firms. Using the same logic as in the previous section, utilize the fact that $W_t$ and $R_t$ strike the same level across sectors:
+    \begin{equation}
+        \frac{k_{it}}{n_{it}}=K_t,\ \ \ \ i=a,m,s,x
+    \end{equation}
+    Moreover, as before, relative prices are determined by technology:
+    \begin{equation}
+        p_{it}=\biggl( \frac{A_{xt}}{A_{it}} \biggr)^{1-\theta},\ \ \ \ i=a,m,s
+    \end{equation}
+    On the production side:
+    \begin{equation}
+        Y_t=p_{at}c_{at}+p_{mt}c_{mt}+p_{st}c_{st}+X_t=K_t^\theta A_{xt}^{1-\theta}
+    \end{equation}
+    Lastly, the F.O.C.s from the firm problems, (5) and (6), still hold.
+
+    The household problem takes the form:
+    \begin{align*}
+        \max_{\{ c_{at},c_{mt},c_{st},K_t \}}& \sum_{t=0}^{\infty} \beta^t log \biggl[ \omega_a^{\frac{1}{\varepsilon}} (c_{at}-\bar{c}_a)^\frac{\varepsilon-1}{\varepsilon} + \omega_m^{\frac{1}{\varepsilon}} (c_{mt})^\frac{\varepsilon-1}{\varepsilon} + \omega_s^{\frac{1}{\varepsilon}} (c_{st}+\bar{c}_s)^\frac{\varepsilon-1}{\varepsilon} \biggr]^{\frac{\varepsilon}{\varepsilon-1}}\\
+        &s.t.\ \ \ \ p_{at}c_{at}+p_{mt}c_{mt}+p_{st}c_{st}+K_{t+1}=(1-\sigma+R_t)K_t+W_t
+    \end{align*}
+    This problem can be split into:
+    \begin{itemize}
+        \item how to allocate total income between total consumption and savings
+        \item how to allocate total consumption expenditure between the three consumption goods
+    \end{itemize}
+
+    In order to have a well defined household problem, we need to make sure that the consumption of agricultural goods will exceed the subsistence term $\bar{c}_{a}$ in each period. Although a corner solution may arise because the household can choose zero consumption of services. For now we just assume that this problem is well defined and all the solutions are interior.
+
+    The first–order conditions for an interior solution for the three consumption categories are:
+    \begin{align}
+        &\frac{1}{C_t} \omega_a^{\frac{1}{\varepsilon}} (c_{at}-\bar{c}_a)^{-\frac{1}{\varepsilon}} C_t^{\frac{1}{\varepsilon}}=\lambda_t p_{at}\\
+        &\frac{1}{C_t} \omega_m^{\frac{1}{\varepsilon}} (c_{mt})^{-\frac{1}{\varepsilon}} C_t^{\frac{1}{\varepsilon}}=\lambda_t p_{mt}\\
+        &\frac{1}{C_t} \omega_s^{\frac{1}{\varepsilon}} (c_{st}+\bar{c}_s)^{-\frac{1}{\varepsilon}} C_t^{\frac{1}{\varepsilon}}=\lambda_t p_{st}
+    \end{align}
+    where $\lambda_t$ is the Lagrange multiplier on the budget constraint in period t. If one raises each of the equations (18)–(20) to the power $1-\varepsilon$, adds them, and uses (12), then one obtains:
+    \begin{equation}
+        \frac{1}{C_t}=\lambda_t [\omega_a(p_{at})^{1-\varepsilon} + \omega_m(p_{mt})^{1-\varepsilon} + \omega_s(p_{st})^{1-\varepsilon}]^{\frac{1}{1-\varepsilon}}
+    \end{equation}
+    Given that in the Lagrangian $\lambda_t$ is the marginal value or utility of expenditure in period t, 
+    \begin{multline*}
+        marginal\ utility\ of\ consumption\\
+        =marginal\ utility\ of\ expenditure\ \cdot\\ price\ of\ a\ unit\ of\ composite\ consumption 
+    \end{multline*}
+    \begin{equation}
+        P_t=[\omega_a(p_{at})^{1-\varepsilon} + \omega_m(p_{mt})^{1-\varepsilon} + \omega_s(p_{st})^{1-\varepsilon}]^{\frac{1}{1-\varepsilon}}
+    \end{equation}
+    If one adds the three first–order conditions (18)–(20) and uses this definition of price index $P_t$, one also obtains:
+    \begin{equation}
+        p_{at}(c_{at}-\bar{c}_a)+p_{mt}c_{mt}+p_{st}(c_{st}+\bar{c}_s)=P_tC_t
+    \end{equation}
+    It follows that the household’s maximization problem can be broken down into two subproblems:
+
+    \textbf{(i) Intertemporal Problem.} This problem includes saving and investment and is another form of the household problem above, in an aggregate way:
+    \begin{equation*}
+        \max_{\{ C_t,K_t \}} \sum_{t=0}^{\infty} \beta^t log C_t\ \ \ \ 
+        s.t.\ \ \ \ P_tC_t+K_{t+1}=(1-\sigma+R_t)K_t+W_t-p_{at}\bar{c}_a+p_{st}\bar{c}_s
+    \end{equation*}
+    This problem thus can be analysed in the framework of previous section. It's the growth component.
+
+    \textbf{(ii) Static Problem.} Allocate the period t consumption expenditure $P_tC_t$ among the three consumption goods:
+    \begin{align*}
+        \max_{\{ c_{at},c_{mt},c_{st} \}}& [ \omega_a^{\frac{1}{\varepsilon}} (c_{at}-\bar{c}_a)^\frac{\varepsilon-1}{\varepsilon} + \omega_m^{\frac{1}{\varepsilon}} (c_{mt})^\frac{\varepsilon-1}{\varepsilon} + \omega_s^{\frac{1}{\varepsilon}} (c_{st}+\bar{c}_s)^\frac{\varepsilon-1}{\varepsilon} \biggr]^{\frac{\varepsilon}{\varepsilon-1}}\\
+        &s.t.\ \ \ \ p_{at}c_{at}+p_{mt}c_{mt}+p_{st}c_{st}=P_tC_t+p_{at}\bar{c}_a-p_{st}\bar{c}_s
+    \end{align*}
+    It's the structural transformation component.
+
+    The growth component looks like the two–sector growth model with the exception of one detail: this economy behaves as if there is a time varying endowment, reflected by the term $−p_{at}\bar{c}_a + p_{st}\bar{c}_s$.
+
+    From the perspective of structural transformation, the first–order conditions (18)–(20) characterize the solution to this static problem. For future reference, we note two useful implications of the F.O.C.s.
+    \begin{itemize}
+        \item \begin{align}
+                    &\biggl( \frac{p_{at}}{p_{mt}} \biggr)^\varepsilon \frac{c_{at}-\bar{c}_a}{c_{mt}}=\frac{\omega_a}{\omega_m}\\
+                    &\biggl( \frac{p_{st}}{p_{mt}} \biggr)^\varepsilon \frac{c_{st}+\bar{c}_s}{c_{mt}}=\frac{\omega_s}{\omega_m}
+              \end{align}
+
+        \item 
+            \begin{align*}
+                &\lambda_t=\frac{1}{C_tP_t}\\
+                &\text{Using F.O.C. (19) we can obtain:}\\
+                &\frac{P_tC_t}{p_{mt}c_{mt}}=C_{t}^{\frac{\varepsilon-1}{\varepsilon}} \omega_m^{-\frac{1}{\varepsilon}} (c_{mt})^{\frac{1-\varepsilon}{\varepsilon}}\\
+                &\frac{P_tC_t}{p_{mt}c_{mt}}=\biggl[ \biggl(\frac{\omega_a}{\omega_m}\biggr)^{\frac{1}{\varepsilon}} \biggl( \frac{c_{at}-\bar{c}_a}{c_{mt}} \biggr)^\frac{\varepsilon-1}{\varepsilon} + \biggl(\frac{\omega_s}{\omega_m}\biggr)^{\frac{1}{\varepsilon}} \biggl( \frac{c_{st}+\bar{c}_s}{c_{mt}} \biggr)^\frac{\varepsilon-1}{\varepsilon}  \biggr]\\
+                &\text{Using (24) and (25) we can obtain:}\\
+                &\frac{P_tC_t}{p_{mt}c_{mt}}=\biggl[ \frac{\omega_a}{\omega_m} \biggl( \frac{p_{at}}{p_{mt}} \biggr)^{1-\varepsilon} + \frac{\omega_s}{\omega_m} \biggl( \frac{p_{st}}{p_{mt}} \biggr)^{1-\varepsilon}  \biggr]\\
+            \end{align*}
+            Using (16)
+            \begin{equation}
+                \frac{P_tC_t}{p_{mt}c_{mt}}=\biggl[ \frac{\omega_a}{\omega_m} \biggl( \frac{A_{mt}}{A_{at}} \biggr)^{(1-\theta)(1-\varepsilon)} + \frac{\omega_s}{\omega_m} \biggl( \frac{A_{mt}}{A_{st}} \biggr)^{(1-\theta)(1-\varepsilon)}  \biggr]
+            \end{equation}
+    \end{itemize}
+        
+    \subsection{Connecting the Benchmark Model to Measures of\\ Structural Transformation}
+    Since we will eventually ask whether versions of this model can help us understand the stylized facts of structural transformation that we documented in Section 2, it's essential to discuss how to connect this model to the various measures from the data that we have previously examined.
+
+    To connect our model with disaggregated sectoral value added, it is natural to assume that the sectoral production functions that we have specified in the benchmark model represent value added production functions. Additionally, because we modeled the investment sector separately, we also need to allocate the value added in $X_t$ to agriculture, manufacture and services. Because the increasing importance of software as a component of investment has led to an increase in the share of investment value added occurring in the service sector, allocation of $X_t$ using constant shares is at odds with the data. Nonetheless, since it serves to facilitate transparency, we will adopt it in the next section. Qualitatively, movements in the sectoral distribution of investment value added shares could affect the predictions. Quantitatively, since total investment is a relatively small share of GDP, this problem is not so relavent.
+
+    The second issue concerns how to connect the model with production value added data versus consumption expenditure data. Specifically, assuming that the sector production functions are interpreted as value added production functions leads to a difficulty when trying to connect the model with data on consumption expenditure shares. It seems natural to identify $p_{it}c_{it}/\sum_j p_{jt}c_{jt}$ as the model’s measure of the nominal consumption share of sector i in period t. Because of the problems indicated by the example of cotton shirt, this measure is not appropriate indeed. Alternatively, one could assume that $p_{it}c_{it}/\sum_j p_{jt}c_{jt}$ does correspond to the nominal consumption expenditure share. In this case, the equilibrium consumption level $p_{it}c_{it}=p_{it}k_{it}^\theta (A_{it}n_{it})^{1-\theta}$ is not an appropriate measure of value added from sector i in period t as measured in the data. This piece of $c_{mt}$ now reflects the value added components from all of the three sectors that went into producing the final product. For now the production functions summarize the labor and capital from the various stages of production that are used to produce final consumption expenditure. In order to obtain the value added from one particular sector as implied by previous definition, we need inverse input-output relationships to unbundle the final consumption. $n_{it}$ is not an appropriate measure of employment of one particular sector now, it reflects all the labor (in several sectors) engaged in the production of final consumption (marked as the final product of one sector).
+
+    The bottom line from this discussion is that if one wants to have a model that can simultaneously address the shares of sectoral employment, value added, and consumption expenditure, then one will need to explicitly include the details of the input–output structure involved in transforming sectoral value added into sectoral consumption expenditure. Moreover, as we discuss later on in more detail, one should not assume that preference and technology parameters are invariant to the interpretation that one imposes on the model objects.
+
+    \section{The Economic Forces Behind Structural\\ Transformation: Theoretical Analysis}
+    The Kaldor facts regarding balanced growth over long periods of time have led the profession to focus on specifications of the one–sector neoclassical growth model that generate balanced growth. And evidence shows that continuing process of structural transformation coexists with the stable behavior of aggregate variables that characterizes balanced growth. Thus, such specifications of models can be made that give rise to a GBGP along which structural transformation occurs. 
+    \subsection{Two Special Cases with Analytical Solutions}
+    In this subsection we focus on two recent papers that emphasize different economic forces behind structural transformation, notably Kongsamut et al. (2001) and Ngai and Pissarides (2007).
+    \subsubsection{Preliminaries}
+    If we are to look for a balanced growth path it is natural to limit ourselves to situations in which technological progress is constant. We therefore assume:
+    \begin{equation}
+        \frac{A_{it+1}}{A_{it}}=1+\gamma_i\ \ \ \ i=a,m,s,x
+    \end{equation}
+    As previously noted, the focus is on structural transformation, so even the endogenous aggregates grow at constant rates, the sector-level variables do not. So we follow the literature and adopt GBGP along which the rental rate of capital is constant, i.e., $R_t=R$. And a GBGP exhibits structural transformation if either sectoral employment shares ($n_{it}$) or sectoral value added (or consumption expenditure) shares ($p_{it}c_{it}/Y_t$) are not constant for all three consumption sectors.
+
+    As a starting point it is useful to examine two special cases. The first special case makes the extreme assumption that the three consumption goods are perfect substitutes: $\bar{c}_a=\bar{c}_s=0$, $\omega_a=\omega_m=\omega_s$, $A_{at}=A_{mt}=A_{st}$, and $\varepsilon \rightarrow \infty$. It's identical at the aggregate level to the two-sector model. Obviously there is no difference between sectors and this causes indeterminacy. one can accommodate whatever patterns one desires in terms of changes in either labor allocations or value added shares across sectors. However, the features of structural transformation appear to be stable over time and across countries, this does not seem a very appealing way to account for structural transformation.
+
+    The second special case of interest assumes that $\bar{c}_a = \bar{c}_s = 0$ and $\varepsilon = 1$, so that the preference aggregator is Cobb Douglas. In this case the unique balanced path has constant sectoral labor and value added shares. With sectoral employment and capital shares fixed, differences in relative productivities generate differences in relative outputs, but these differences in output are perfectly offset in terms of value added shares by changes in relative prices. This kind of balanced path doesn't give rise to structural transformation.
+
+    In what follows we describe two scenarios that can generate structural transformation along a GBGP. Each of them can be understood as a departure from this second special case.
+
+    \subsubsection{Case 1: Income Effects and Structural Transformation}
+    Case 1 corresponds to the analysis found in Kongsamut et al. (2001) and represents the extreme scenario in which all structural change is driven by income effects that are generated by the non–homotheticity terms $\bar{c}_a$ and $\bar{c}_s$ when income changes but relative prices remain the same. For this case we assume that technological progress is uniform across all consumption sectors $(\gamma_i = \gamma_j\ \text{for all}\ i, j = a, m, s)$ and that $\varepsilon =1$. Note that $\varepsilon$ equals the elasticity of substitution only if $\bar{c}_a=\bar{c}_s=0$. The consumption aggregator (12) then takes the well known Stone–Geary form:
+    \begin{equation}
+        C_t=\omega_a log(c_{at}-\bar{c}_a) + \omega_m log(c_{mt}) + \omega_s log(c_{st}+\bar{c}_s)
+    \end{equation}
+    As income (or output $Y_t$) grows, the non–homotheticity of the demands for the different consumption goods will lead to changes in the value added shares. In a GBGP,from the Euler equation (7) for the household problem we know that if $R_t$ is constant over time, then it must be that $P_tC_t$ grows at a constant rate. Combining (17) and (23) we have:
+    \begin{equation}
+        P_tC_t+p_{at}\bar{c}_a-p_{st}\bar{c}_s=K_t^\theta A_{xt}^{1-\theta} + (1-\sigma)K_t-K_{t+1}
+    \end{equation}
+    In previous model $K_t$ and $A_{xt}$ grow at rate $\gamma_x$, the left-hand side must also grow at rate $\gamma_x$. If $p_{a0}\bar{c}_a-p_{s0}\bar{c}_s \neq 0$, then $p_{at}\bar{c}_a-p_{st}\bar{c}_s$ will grow at rate $\gamma_x$ only if both relative prices grow at rate $\gamma_x$. However, from (16) we know that $p_{at}$ and $p_{st}$ both grow at gross rate $[(1+\gamma_{xt})/(1+\gamma_{at})]^{1-\theta}=[(1+\gamma_{xt})/(1+\gamma_{st})]^{1-\theta}$. Hence, balanced growth requires that $p_{a0}\bar{c}_a-p_{s0}\bar{c}_s=0$, which is equivalent to:
+    \begin{equation}
+        \frac{\bar{c}_a}{\bar{c}_s}=\biggl( \frac{A_{ao}}{A_{so}} \biggr)^{1-\theta}
+    \end{equation}
+    Note that since both relative prices grow at the same rate, this condition implies that $p_{at}\bar{c}_a-p_{st}\bar{c}_s = 0$ at all dates t.
+
+    And given (29), $P_tC_t$ is also required to grow at $\gamma_x$. From the perspective of balanced growth this economy then looks very much like the previous two–sector model. In particular, similar to that two–sector model, the share of labor and capital devoted to consumption versus investment is constant along a GBGP.
+
+    Next we consider whether structural transformation occurs along the GBGP. If $\varepsilon=1$, then (23)–(25) imply the Stone–Geary demand system:
+    \begin{align}
+        &c_{at}=\omega_a \frac{P_tC_t}{p_{at}} + \bar{c}_a\\
+        &c_{mt}=\omega_m \frac{P_tC_t}{p_{mt}}\\
+        &c_{st}=\omega_s \frac{P_tC_t}{p_{st}} - \bar{c}_s
+    \end{align}
+    Moreover, $(\gamma_i = \gamma_j\ \text{for all}\ i, j = a, m, s)$ implies that the relative prices of the three consumption goods are constant:
+    \begin{equation*}
+        \frac{p_{it}}{P_t}=\frac{p_{i0}}{P_0},\ \ \ \ i\in\{a,m,s\}
+    \end{equation*}
+    Hence compared to $C_t$, $c_{at}$, $c_{mt}$ and $c_{st}$ grow at a slower rate, at the same rate, and at a faster rate respectively. Given that the relative prices are constant, $p_{it}c_{it}/P_tC_t$ follows the same pattern of $c_{it}/C_t$: decreasing for agriculture, constant for manufacturing and increasing for services. As showed in the two-sector model, $P_tC_t/Y_t$ is constant. Combining with 
+    \begin{align*}
+        &\frac{k_{it}}{n_{it}}=K_t,\ \ \ \ i=a,m,s,x\\
+        &c_{it}=K_t^\theta A_{it}^{1-\theta} n_{it},\ \ \ \ \ \ i \in \{a,m,s\}\\
+    \end{align*}
+    it follows that these properties also carry over to both $n_{it}$ and $p_{it}c_{it}/Y_t$.
+
+    \begin{pro}
+        Assume that condition (30) holds and that
+        \begin{equation}
+            \bar{c}_s \leq \omega_s \biggl( \frac{A_{s0}}{A_{x0}} \biggr)^{1-\theta} [K_0^\theta A_{x0}^{1-\theta} - (\gamma_x+\sigma)K_0] 
+        \end{equation}
+        where $K_0$ is given by (11).
+
+        Then there is a unique GBGP. Along the GBGP, the employment and nominal value added shares ofthe investment sector are constant. The employment and nominal value added shares are decreasing for agriculture, constant for manufacturing and increasing for services.
+    \end{pro}
+    \begin{proof}
+        (11) implies that:
+        \begin{equation*}
+            Y_0=K_0^\theta A_{x0}^{1-\theta}=\frac{(1+\gamma_x)-\beta(1-\sigma)}{\beta \theta} K_0>(\gamma_x+\sigma)K_0
+        \end{equation*}
+        Hence,
+        \begin{equation*}
+            P_0C_0=Y_0-X_0=K_0^\theta A_{x0}^{1-\theta}-K_1+(1-\sigma)K_0=K_0^\theta A_{x0}^{1-\theta}-(\gamma_x+\sigma)K_0>0
+        \end{equation*}
+        According to (33) and (16):
+        \begin{align*}
+            \bar{c}_s&=\omega_s\frac{P_0C_0}{p_{s0}} - c_{s0}\\
+            &=\omega_s \biggl( \frac{A_{s0}}{A_{x0}} \biggr)^{1-\theta} [K_0^\theta A_{x0}^{1-\theta} - (\gamma_x+\sigma)K_0] - c_{s0}
+        \end{align*}
+        thus, (34) is well defined and it ensures that the right–hand side of (33) is positive at t = 0. In this case, equations (31)–(33) are well defined and they have a unique interior solution for $c_{at},\ c_{mt},\ c_{st}$.
+    \end{proof}
+
+    \subsubsection{Case 2: Relative Price Effects and Structural Transformation}
+    The second case that we consider corresponds to the analysis found in Ngai and Pissarides (2007). Ngai and Pissarides consider the polar extreme case in which structural transformation is generated purely from changes in relative prices and ask whether this can be consistent with balanced growth. They assume that $\bar{c}_a=\bar{c}_s=0$, and given our previous discussion $\varepsilon \neq 0$ here. Differential rates of technological progress (different $\gamma_a,\gamma_m,\gamma_s$) are necessary to produce relative price changes, and the price index will not grow at a constant rate. As noted previously, this has no bearing on the existence of a unique GBGP. There still is a unique GBGP that features a constant share of labor and capital allocated to aggregate consumption. Along the GBGP the value of $P_tC_t$ will grow at the constant rate $\gamma_x$ even though neither component grows at a constant rate.
+
+    Using (16), (24) and (25):
+    \begin{align}
+        &\frac{c_{at}}{c_{mt}}=\frac{\omega_a}{\omega_m} \biggl( \frac{A_{at}}{A_{mt}} \biggr)^{\varepsilon (1-\theta)}\\
+        &\frac{c_{st}}{c_{mt}}=\frac{\omega_s}{\omega_m} \biggl( \frac{A_{st}}{A_{mt}} \biggr)^{\varepsilon (1-\theta)}
+    \end{align}
+    Noting that $c_{it} = K_t^\theta A^{1−\theta}_{it} n_{it}$, we also have:
+    \begin{align}
+        &\frac{n_{at}}{n_{mt}}=\frac{\omega_a}{\omega_m} \biggl( \frac{A_{mt}}{A_{at}} \biggr)^{(1-\varepsilon) (1-\theta)}\\
+        &\frac{n_{st}}{n_{mt}}=\frac{\omega_s}{\omega_m} \biggl( \frac{A_{mt}}{A_{st}} \biggr)^{(1-\varepsilon) (1-\theta)}
+    \end{align}
+    Recalling that labor shares in consumption sector versus investment sector is constant, it follows that if $\varepsilon=1$, the $n_{it}$ are constant in three consumption sectors. Implied by (24)-(26), so too are the values of $p_{it}c_{it}/P_tC_t$ and $p_{it}c_{it}/Y_t$, which means that there is no structural transformation. If $\varepsilon \neq 1$, it is not true in this case that $c_{mt}$ is a constant proportion of $C_t$, nor is true that $C_t$ grows at a constant rate. Without imposing some additional structure one cannot say more about the nature of structural transformation that occurs. 
+    
+    \begin{pro}
+        Let $\bar{c}_a = \bar{c}_s = 0$, $\varepsilon < 1$, $\gamma_a > \gamma_m > \gamma_s > 0$, and $\gamma_x > 0$. 
+        
+        There is a unique GBGP. Along the GBGP, the shares of employment and nominal value added (in current prices) of the investment sector are constant; the shares of employment and nominal value added (in current prices) of the consumption sectors behave as follows: the agricultural shares decline; the services shares rise; the manufacturing shares decrease less than the agricultural shares and increase less than the service shares.
+    \end{pro}
+
+    \subsubsection{Qualitative Assessment}
+    While both two papers above can qualitatively account for some of the patterns found earlier, each also has some limitations.
+
+    We begin with the model of Kongsamut et al. (2001). Since the investment sector uses a constant share of labor and accounts for a constant share of (nominal) output, it will not influence the trend behavior of any quantities if it is allocated across the three sectors in constant proportions. Assuming this and starting with the nominal production measures, this model can account for stylized facts in the agricultural sector and the service sector. But it does not generate a hump shape for the manufacturing sector measures. While we can adjust investment shares to accommodate these facts, this approach doesn't solve the deficits. Turning to the nominal consumption expenditure measures, the model can account for the increase in the service share, the near constancy of the manufacturing share, and the decrease in the agricultural share.
+
+    The model of Kongsamut et al. (2001) has two additional implications that are counterfactual.
+    \begin{itemize}
+        \item Along its GBGP, $P_{it}$ need to be constant, then the real and nominal measures must display the same properties. The model cannot account for the quantitative differences between them.
+        \item The model implies that in sufficiently poor economies, the household will consume a zero quantity of services and employment in services will also be zero. In contrast, even in the poorest countries service employment and value added are bounded away from zero.
+    \end{itemize}
+
+    Next we turn to the model of Ngai and Pissarides (2007). This model does not necessarily deliver a hump shape for the manufacturing shares of employment and nominal valued added, it can deliver this for certain parameter values. Turning to the nominal consumption expenditure measures, this problem still exists.
+
+    The model of Ngai and Pissarides (2007) cannot account for the behavior of all real shares, irrespective of whether we use production or consumption related measures. Consider the implications of a decrease in the price of manufacturing relative to services. If $\varepsilon \in [0, 1)$, which means that the CES utility function is inelastic, then the nominal quantity of manufacturing decreases relative to that of services whereas the real quantity of manufactured goods relative to services remains the same if $\varepsilon = 0$ and increases if $\varepsilon \in (0, 1)$. With a CES utility function, nominal and real shares necessarily move in opposing directions.
+
+    \subsection{Alternative Specifications}
+    \subsubsection{Other Specifications Emphasizing the Effects of Income\\ Changes}
+    \section{The Economic Forces Behind Structural\\ Transformation: Empirical Analysis}
+    \subsection{Technological Differences Across Sectors}
+
+\end{document}
