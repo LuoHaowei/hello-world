@@ -265,3 +265,15 @@ Gertrud (1964)
 Dogville (2003)
 
 Vivre sa Vie (1962)
+## Episode 03
+* After the realists, the second challenge to conventional cinema in the 20s came from Ernst Lubitsch. In the film he directed, he mocked the heavy-handed, almost victorian way, that sex and love were shown in the movies, and came up with a style that was all his own. And few directors anywhere in the world were as visually daring as Lubitsch. *The Mountain Cat* is a riot of surreal production design. Its screen masking is even more daring. Such virtuosiy was noticed by Hollywood and that was his last film before moving there. 
+* American censorship meant that Lubitsch had to be inventive in how he portrayed sexuality there. In *The Marriage Circle* he uses a break amid breakfast to represent the urge to enjoy sex. Lubitsch films nothing of their lovemaking of course, but his use of objects is a cinematic equivalent of a raised eyebrow, far more daring in his suggestion of sexuality than Chaplin or Keaton or Lloyd. 
+### 片单 
+Robert and Bertram (1915)
+
+The Oyster Princess (1919)
+
+The Mountain Cat (1921)
+
+The Marriage Circle (1924)
+
